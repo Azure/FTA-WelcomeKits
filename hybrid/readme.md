@@ -7,6 +7,7 @@ Welcome to the ultimate guide for Azure Stack HCI enthusiasts! Whether you are e
   - **Networking:** Strategic implementation of networking solutions to facilitate robust data communication and connectivity within Azure Stack HCI environments ([Networking Best Practices](https://aka.ms/FTAWelcomeKit/Hybrid/Networking)).
   - **Storage:** Deployment of advanced storage solutions, tailored to manage data effectively in Azure Stack HCI, enhancing data availability and integrity ([Storage Configuration](https://aka.ms/FTAWelcomeKit/Hybrid/Storage)).
   - **Cluster Creation and Registration:** Systematic establishment and registration of HCI clusters, focusing on scalability, manageability, and seamless integration ([Cluster Deployment Guidelines](https://aka.ms/FTAWelcomeKit/Hybrid/ClusterDeployment)).
+ - **Cluster Deployment (23H2)** Overview of the steps of the deployment from installing of the OS to The actual cluster deployment([Cluster Deployment (23H2)](https://aka.ms/FTAWelcomeKit/Hybrid/ClusterDeployment-23h2)).
 
 - **Services and Applications:**
   - **SQL MI:** Deployment of SQL Managed Instances in Azure, providing sophisticated database management capabilities and optimizations within Azure Stack HCI frameworks ([SQL MI Integration](https://aka.ms/FTAWelcomeKit/Hybrid/SQLMI)).
