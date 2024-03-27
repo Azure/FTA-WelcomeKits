@@ -7,7 +7,7 @@ When migrating to Azure VMware Solution, it is important to gain proper insights
 2. Gain insights in the potential dependencies between workloads which need to be considered carefully,
 3. Gain insights how many AVS nodes will be required to host the workloads in scope.
 
-Azure Migrate offers various capabilities to support this analysis either through collecting performance data online using the Azure Migrate on-premises discovery appliance or by importing the required data using a RVTools export file. With the Azure Migrate Discovery appliance, performace information can be gathered over a period of time and this is therefor considered more acurate then using an RVTools import which is a point in time snapshot of the performance data.
+Azure Migrate offers various capabilities to support this analysis either through collecting performance data online using the Azure Migrate on-premises discovery appliance or by importing the required data using a RVTools export file. With the Azure Migrate Discovery appliance, performance information can be gathered over a period of time and this is therefor considered more accurate then using an RVTools import which is a point in time snapshot of the performance data.
 | Title | Type | Reference |
 | ----- | ---- | --------- |
 | Azure VMware Solution (AVS) Migration and Capacity Planning using Azure Migrate Server Assessment | Video - YouTube | [Link](https://www.youtube.com/watch?v=NoNG-hkksrA&t=692s&pp=ygUcYXp1cmUgbWlncmF0ZSBhc3Nlc3NtZW50IGF2cw%3D%3D) |
@@ -31,7 +31,7 @@ The following table provides a list of learning resources on VMware HCX:
 
 Next to VMware HCX a wide-variety of other 3rd party solutions have been validated to work with AVS. Based on customer requirements or pre-existing experience (or licensing), it maybe be a completely valid decision to implement another migration offering than VMware HCX like Zerto, Veeam and others. When deciding to leverage another migration solution than VMware HCX, please **always make sure** to consult the software vendor's documentation on AVS support for their specific product. Specific exceptions and/or limitations in the available feature set of their product may apply when used in an AVS implementation.
 
-For convinience we provide some references in the table below. This list is not intended to be a full list of solutions nor is this intended to express a specific vendor preference:
+For convenience we provide some references in the table below. This list is not intended to be a full list of solutions nor is this intended to express a specific vendor preference:
 | Title | Type | Reference |
 | ----- | ---- | --------- |
 | Zerto: On-premises VMware vSphere to Azure VMware Solution | Zerto KB | [Link](https://help.zerto.com/bundle/Install.AVS.HTML/page/Zerto_AVS_Architecture.htm) |
