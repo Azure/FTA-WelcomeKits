@@ -2,17 +2,13 @@
 
 ## Governance
 
-
 ## Business Continuity
 
+| **Topic** | **Reference** |
+|----------------|-----------------|
+|Backup Considerations | • [Set up Azure Backup Server for Azure VMware Solution](https://learn.microsoft.com/azure/azure-vmware/set-up-backup-server-for-azure-vmware-solution) <br> • [Backup solutions for Azure VMware Solution virtual machines (VMs)](https://learn.microsoft.com/azure/azure-vmware/ecosystem-back-up-vms) |
 
 ## Disaster Recovery
-
-
-
-
-
-
 
 Input to be removed when done:
 | **Topic**                             | **Reference**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
