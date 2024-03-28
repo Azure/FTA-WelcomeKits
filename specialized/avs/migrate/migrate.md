@@ -1,8 +1,11 @@
 # Welcome Kit - Azure VMware Solution - Assess and Migrate - Draft
+
 Welcome to the FastTrack for Azure AVS Welcome Kit section on migration. This comprehensive guide is designed to provide you with essential insights into the areas of focus and consideration when planning and designing your AVS migration efforts. As part of your preparation before engaging with Microsoft engineers, this resource aims to demystify these technologies, offering clear explanations and answers to frequently asked questions. Whether you're new to these concepts or seeking to deepen your understanding, this Welcome Kit is your stepping stone to navigating the world of modern cloud-native solutions.
 
 ## Assess
+
 When migrating to Azure VMware Solution, it is important to gain proper insights into your current workloads. This is important to:
+
 1. Understand which workloads can be migrated easily and which would require some additional investigation,
 2. Gain insights in the potential dependencies between workloads which need to be considered carefully,
 3. Gain insights how many AVS nodes will be required to host the workloads in scope.
@@ -16,7 +19,8 @@ Azure Migrate offers various capabilities to support this analysis either throug
 | Import servers running in a VMware environment with RVTools | MS learn | [Link](https://learn.microsoft.com/en-us/azure/migrate/tutorial-import-vmware-using-rvtools-xlsx)
 
 ## Migrate
-To migrate workloads from on-premises to AVS, a wide variety of solutions is available for use. The migration service provided by the Azure platform for migrations to Azure is called Azure Migrate. At this point in time, Azure Migrate **cannot be used** for migrations to AVS. As part of the AVS service, VMware HCX (Hybrid Cloud Interconnect) is offered to support migrations from on-premises VMware infrastructures to AVS. VMware HCX Enterprise is licensed as part of the AVS service charges. 
+
+To migrate workloads from on-premises to AVS, a wide variety of solutions is available for use. The migration service provided by the Azure platform for migrations to Azure is called Azure Migrate. At this point in time, Azure Migrate **cannot be used** for migrations to AVS. As part of the AVS service, VMware HCX (Hybrid Cloud Interconnect) is offered to support migrations from on-premises VMware infrastructures to AVS. VMware HCX Enterprise is licensed as part of the AVS service charges.
 
 > **Important Note**: Please be aware that though VMware HCX is provided and licensing through the AVS services, managing the HCX lifecycle (deploy, update, delete) is the responsibility of the service consumer. VMware HCX updates are not automatically applied as part of AVS service management!
 
