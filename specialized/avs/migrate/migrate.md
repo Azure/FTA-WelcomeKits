@@ -14,9 +14,9 @@ Azure Migrate offers various capabilities to support this analysis either throug
 | Title | Type | Reference |
 | ----- | ---- | --------- |
 | Azure VMware Solution (AVS) Migration and Capacity Planning using Azure Migrate Server Assessment | Video - YouTube | [Link](https://www.youtube.com/watch?v=NoNG-hkksrA&t=692s&pp=ygUcYXp1cmUgbWlncmF0ZSBhc3Nlc3NtZW50IGF2cw%3D%3D) |
-| Plan your migration to Azure VMware solution using Azure Migrate | Azure Blogs | [Link](https://azure.microsoft.com/en-us/blog/plan-your-migration-to-azure-vmware-solution-using-azure-migrate/) |
-| Create an Azure VMware Solution assessment | MS learn | [Link](https://learn.microsoft.com/en-us/azure/migrate/how-to-create-azure-vmware-solution-assessment?context=/azure/azure-vmware/context/context) |
-| Import servers running in a VMware environment with RVTools | MS learn | [Link](https://learn.microsoft.com/en-us/azure/migrate/tutorial-import-vmware-using-rvtools-xlsx)
+| Plan your migration to Azure VMware solution using Azure Migrate | Azure Blogs | [Link](https://azure.microsoft.com/blog/plan-your-migration-to-azure-vmware-solution-using-azure-migrate/) |
+| Create an Azure VMware Solution assessment | MS learn | [Link](https://learn.microsoft.com/en-us/azure/migrate/how-to-create-azure-vmware-solution-assessment) |
+| Import servers running in a VMware environment with RVTools | MS learn | [Link](https://learn.microsoft.com/en-us/azure/migrate/tutorial-import-vmware-using-rvtools-xlsx) |
 
 ## Migrate
 
