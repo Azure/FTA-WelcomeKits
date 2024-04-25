@@ -45,4 +45,4 @@ These topic(s) will have a specific focus on your networking design, understandi
 | Title | Type | Reference |
 | --- | --- |--- |
 | Enterprise-scale network topology and connectivity for Azure VMware Solution | MS Learn | [Link](https://learn.microsoft.com/azure/cloud-adoption-framework/scenarios/azure-vmware/eslz-network-topology-connectivity) |
-| Example architectures for Azure VMware Solutions | MS Learn | [Link](https://learn.microsoft.com/en-gb/azure/cloud-adoption-framework/scenarios/azure-vmware/example-architectures) |
+| Example architectures for Azure VMware Solutions | MS Learn | [Link](https://learn.microsoft.com/azure/cloud-adoption-framework/scenarios/azure-vmware/example-architectures) |
