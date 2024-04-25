@@ -18,7 +18,7 @@ In these sections ([**design**](architectureAndDesign/design.md) and [**architec
 
 ## Plan
 
-TODO: Add Plan Intro
+In this [section](plan/plan.md) we will explain the fundamental concepts that are relevant to all planning session when considering an Azure VMware Solution [deployment](deploy/deploy.md)
 
 [Plan](plan/plan.md)
 
