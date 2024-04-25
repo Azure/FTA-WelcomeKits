@@ -1,11 +1,11 @@
 # Welcome Kit - Azure VMware Solution - Architecture - Draft
 
-TODO: Remove _**DRAFT**_
-
+TODO: Remove _**DRAFT**_  
+[Home](../readme.md)  
 [High-level architectural components for Azure VMware Solution](#high-level-architectural-components-for-azure-vmware-solution)  
 [Network \& Connectivity architecture patterns](#network--connectivity-architecture-patterns)
 
-Welcome to the FastTrack for Azure AVS Welcome Kit section on architecture. This comprehensive guide is designed to provide you with essential insights into the areas of focus and consideration when planning and designing your AVS migration efforts. As part of your preparation before engaging with Microsoft engineers, this resource aims to demystify these technologies, offering clear explanations and answers to frequently asked questions. Whether you're new to these concepts or seeking to deepen your understanding, this Welcome Kit is your stepping stone to navigating the world of modern cloud-native solutions.
+Welcome to the FastTrack for Azure - Azure VMware Solution Welcome Kit section on architecture. This comprehensive guide is designed to provide you with essential insights into the areas of focus and consideration when planning and designing your AVS migration efforts. As part of your preparation before engaging with Microsoft engineers, this resource aims to demystify these technologies, offering clear explanations and answers to frequently asked questions. Whether you're new to these concepts or seeking to deepen your understanding, this Welcome Kit is your stepping stone to navigating the world of modern cloud-native solutions.
 
 ## High-level architectural components for Azure VMware Solution
 
