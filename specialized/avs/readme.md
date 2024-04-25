@@ -32,7 +32,7 @@ TODO: Add Deploy Intro
 
 ## Migrate  
 
-TODO: Add Migrate Intro
+In this [section](migrate/migrate.md) we will explain the concepts related to the assessment of your Azure VMware Solution environment and we will explain different migration tools available to you.
 
 ## Govern  
 
