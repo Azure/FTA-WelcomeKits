@@ -15,6 +15,7 @@ TODO: Add fluff and links
 | Configure alerts and work with metrics | MS Learn | [Link](https://learn.microsoft.com/azure/azure-vmware/configure-alerts-for-azure-vmware-solution) |
 | Alerting considerations | MS Learn | [Link](https://learn.microsoft.com/azure/cloud-adoption-framework/scenarios/azure-vmware/eslz-management-and-monitoring#azure-tooling-recommendations) |
 | Management and monitoring | MS Learn | [Link](https://learn.microsoft.com/azure/cloud-adoption-framework/scenarios/azure-vmware/eslz-management-and-monitoring#azure-tooling-recommendations) |
+| Using Run-commands for privileged operations | MS Learn | [Link](https://learn.microsoft.com/azure/azure-vmware/concepts-run-command) |
 
 ## Business Continuity
 TODO: Add intro
@@ -25,13 +26,7 @@ TODO: Add intro
 | Backup solutions for Azure VMware Solution virtual machines (VMs) | MS Learn | [Link](https://learn.microsoft.com/azure/azure-vmware/ecosystem-back-up-vms) |
 
 ## Disaster Recovery
-TODO: Add intro
+TODO: Add intro and links
 
 | **Title** | **Type** | **Reference** |
 | --- | --- | ---|
-
-
-Input to be removed when done:
-| **Topic**                             | **Reference**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-|----------------|-------------------------------------------------                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| Elevated operations (run-commands)    | • [Concepts – Run Command in Azure VMware Solution (Preview) – Azure VMware Solution](https://learn.microsoft.com/azure/azure-vmware/concepts-run-command)
