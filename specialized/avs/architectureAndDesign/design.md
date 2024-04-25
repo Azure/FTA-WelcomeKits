@@ -1,13 +1,3 @@
-
-
-
-
-
-
-
-
-
-
 Input to be removed when done:
 | **Topic**                                          | **Reference**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 |-----------------|-------------------------------------------------------|
@@ -23,4 +13,3 @@ Input to be removed when done:
 | Topic | Reference |
 | ---    |  --- |
 | Network & connectivity architecture(s) | • [Enterprise-scale network topology and connectivity for Azure VMware Solution – Cloud Adoption Framework](https://learn.microsoft.com/azure/cloud-adoption-framework/scenarios/azure-vmware/eslz-network-topology-connectivity) |
-
