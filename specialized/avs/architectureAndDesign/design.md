@@ -1,5 +1,7 @@
 # Design
 
+[Home](../readme.md)  
+
 | **Topic** |  **Reference**  |
 |--------|-----|
 | Azure VMware Solution Azure Landing Zone Checklist | • [Azure/review-checklists](https://github.com/Azure/review-checklists) |
