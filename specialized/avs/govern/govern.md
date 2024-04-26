@@ -32,5 +32,10 @@ TODO: Add intro
 
 TODO: Add intro and links
 
+These topic(s) will have a specific focus on the disaster recovery options available to you. As this is primarlity focused on the VMware aspects, many of these might be a 3rd party solution.
+
 | **Title** | **Type** | **Reference** |
 | --- | --- | ---|
+| VMware Site Recovery Manager is now Available for Azure VMware Solution | Microsoft Tech Community  | [Link](https://techcommunity.microsoft.com/t5/azure-migration-and/vmware-site-recovery-manager-is-now-available-for-azure-vmware/ba-p/2553545) |
+| Disaster Recovery using cross-region replication with Azure NetApp Files datastores for AVS | Microsoft Tech Community | [Link](https://techcommunity.microsoft.com/t5/azure-architecture-blog/disaster-recovery-using-cross-region-replication-with-azure/ba-p/3870682) |
+| Azure VMware Solution Support — Considerations and Limitations | Veeam | [Link](https://www.veeam.com/kb4012) |
