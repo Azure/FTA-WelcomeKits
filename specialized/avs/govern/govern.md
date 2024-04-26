@@ -23,6 +23,8 @@ TODO: Add fluff and links
 
 TODO: Add intro
 
+These topic(s) will have a specific focus on the backup options available to you. As this is primarily focused on the VMware aspects, many of these might be a 3rd party solution.
+
 | **Title** | **Type** | **Reference** |
 | --- | --- | ---|
 | Set up Azure Backup Server for Azure VMware Solution | MS Learn | [Link](https://learn.microsoft.com/azure/azure-vmware/set-up-backup-server-for-azure-vmware-solution) |
@@ -32,7 +34,7 @@ TODO: Add intro
 
 TODO: Add intro and links
 
-These topic(s) will have a specific focus on the disaster recovery options available to you. As this is primarlity focused on the VMware aspects, many of these might be a 3rd party solution.
+These topic(s) will have a specific focus on the disaster recovery options available to you. As this is primarily focused on the VMware aspects, many of these might be a 3rd party solution.
 
 | **Title** | **Type** | **Reference** |
 | --- | --- | ---|
