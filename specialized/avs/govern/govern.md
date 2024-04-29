@@ -4,7 +4,9 @@
 
 Governance is a key aspects with any cloud service as there are standards (and sometimes unique to your organization requirements) that need to be adhered to within this provider space. The links below will help you to adhere to these standards and/or get further insights into the platform to make adherence to your standards easier to visualize and/or understand.
 
-TODO: Add intro
+[Governance](#governance)  
+[Business Continuity](#business-continuity)  
+[Disaster Recovery](#disaster-recovery)
 
 ## Governance
 
@@ -25,8 +27,6 @@ TODO: Add fluff and links
 
 ## Business Continuity
 
-TODO: Add intro
-
 These topic(s) will have a specific focus on the backup options available to you. As this is primarily focused on the VMware aspects, many of these might be a 3rd party solution.
 
 | **Title** | **Type** | **Reference** |
@@ -35,8 +35,6 @@ These topic(s) will have a specific focus on the backup options available to you
 | Backup solutions for Azure VMware Solution virtual machines (VMs) | MS Learn | [Link](https://learn.microsoft.com/azure/azure-vmware/ecosystem-back-up-vms) |
 
 ## Disaster Recovery
-
-TODO: Add intro and links
 
 These topic(s) will have a specific focus on the disaster recovery options available to you. As this is primarily focused on the VMware aspects, many of these might be a 3rd party solution.
 
