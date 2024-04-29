@@ -10,7 +10,7 @@ Governance is a key aspects with any cloud service as there are standards (and s
 
 ## Governance
 
-TODO: Add fluff and links
+These topic(s) will have a specific focus on the monitoring and insights options available to you. Some of these might be Microsoft native or VMware specific.
 
 | **Title** | **Type** | **Reference** |
 | --- | --- | ---|
@@ -24,6 +24,7 @@ TODO: Add fluff and links
 | Alerting considerations | MS Learn | [Link](https://learn.microsoft.com/azure/cloud-adoption-framework/scenarios/azure-vmware/eslz-management-and-monitoring#azure-tooling-recommendations) |
 | Management and monitoring | MS Learn | [Link](https://learn.microsoft.com/azure/cloud-adoption-framework/scenarios/azure-vmware/eslz-management-and-monitoring#azure-tooling-recommendations) |
 | Using Run-commands for privileged operations | MS Learn | [Link](https://learn.microsoft.com/azure/azure-vmware/concepts-run-command) |
+| Configure Aria Operations for Azure VMware Solution | MS Learn | https://learn.microsoft.com/azure/azure-vmware/vrealize-operations-for-azure-vmware-solution |
 
 ## Business Continuity
 
