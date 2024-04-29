@@ -5,4 +5,6 @@ Azure Landing Zone?
 Accelerator for AVS?
 Reference the implementation list??
 
-[Deploy and configure Azure VMware Solution](https://learn.microsoft.com/en-us/azure/azure-vmware/deploy-azure-vmware-solution)
+| Title | Type | Reference |
+| --- | --- | --- |
+| Deploy and configure Azure VMware Solution | MS Learn | [Link](https://learn.microsoft.com/azure/azure-vmware/deploy-azure-vmware-solution) |
