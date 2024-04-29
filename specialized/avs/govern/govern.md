@@ -2,6 +2,8 @@
 
 [Home](../readme.md)  
 
+Governance is a key aspects with any cloud service as there are standards (and sometimes unique to your organization requirements) that need to be adhered to within this provider space. The links below will help you to adhere to these standards and/or get further insights into the platform to make adherence to your standards easier to visualize and/or understand.
+
 TODO: Add intro
 
 ## Governance
