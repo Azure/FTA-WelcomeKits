@@ -24,8 +24,7 @@ In this [section](plan/plan.md) we will explain the fundamental concepts that ar
 
 ## Prepare  
 
-In this [section](prepare/prepare.md) we will explain the fundamental concepts that are relevant to to preparing to [deploy](deploy/deploy.md) an Azure VMware Solution implementaion
-
+In this [section](prepare/prepare.md) we will explain the fundamental concepts that are relevant to to preparing to [deploy](deploy/deploy.md) an Azure VMware Solution implementation.
 
 ## Deploy  
 
