@@ -20,15 +20,13 @@ In these sections ([**design**](architectureAndDesign/design.md) and [**architec
 
 In this [section](plan/plan.md) we will explain the fundamental concepts that are relevant to all planning session when considering an Azure VMware Solution [deployment](deploy/deploy.md)
 
-[Plan](plan/plan.md)
-
 ## Prepare  
 
 In this [section](prepare/prepare.md) we will explain the fundamental concepts that are relevant to to preparing to [deploy](deploy/deploy.md) an Azure VMware Solution implementation.
 
 ## Deploy  
 
-TODO: Add Deploy Intro
+In this [section](deploy/deploy.md) we will explain the options avaialble to and highlight some key focus areas when you are ready to start deploying your Azure VMware Solution. Please do **NOT** skip here directly. [**Design**](architectureAndDesign/design.md), [**Architecture**](architectureAndDesign/architecture.md), [**Plan**](plan/plan.md) and [**Prepare**](prepare/prepare.md) are key aspects to ensure success.
 
 ## Migrate  
 
@@ -36,7 +34,7 @@ In this [section](migrate/migrate.md) we will explain the concepts related to th
 
 ## Govern  
 
-TODO: Add Govern Intro
+In this [section](govern/govern.md) we will cover key aspects that should be included in all areas of your deployment, these include Governance, Business Continuity and Disaster Recovery.
 
 ## Secure  
 

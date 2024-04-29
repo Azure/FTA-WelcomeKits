@@ -24,7 +24,7 @@ These topic(s) will have a specific focus on the monitoring and insights options
 | Alerting considerations | MS Learn | [Link](https://learn.microsoft.com/azure/cloud-adoption-framework/scenarios/azure-vmware/eslz-management-and-monitoring#azure-tooling-recommendations) |
 | Management and monitoring | MS Learn | [Link](https://learn.microsoft.com/azure/cloud-adoption-framework/scenarios/azure-vmware/eslz-management-and-monitoring#azure-tooling-recommendations) |
 | Using Run-commands for privileged operations | MS Learn | [Link](https://learn.microsoft.com/azure/azure-vmware/concepts-run-command) |
-| Configure Aria Operations for Azure VMware Solution | MS Learn | https://learn.microsoft.com/azure/azure-vmware/vrealize-operations-for-azure-vmware-solution |
+| Configure Aria Operations for Azure VMware Solution | MS Learn | [Link](https://learn.microsoft.com/azure/azure-vmware/vrealize-operations-for-azure-vmware-solution) |
 
 ## Business Continuity
 
