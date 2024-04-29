@@ -1,5 +1,7 @@
 # Prepare
 
+[Home](../readme.md)  
+[Proof Of Concpet Tutorials](#tutorials)  
 These topic(s) will have a specific focus on how best to prepare for uour Azure VMware Solution deployment, the resources will be combination of Microsoft and VMware resources due to the fact that this is a managed VMware service
 
 prepare.md

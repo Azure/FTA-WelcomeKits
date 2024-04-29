@@ -24,7 +24,8 @@ In this [section](plan/plan.md) we will explain the fundamental concepts that ar
 
 ## Prepare  
 
-TODO: Add Prepare Intro
+In this [section](prepare/prepare.md) we will explain the fundamental concepts that are relevant to to preparing to [deploy](deploy/deploy.md) an Azure VMware Solution implementaion
+
 
 ## Deploy  
 
