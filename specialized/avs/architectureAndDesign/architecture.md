@@ -9,7 +9,7 @@ Welcome to the FastTrack for Azure - Azure VMware Solution Welcome Kit section o
 
 ## High-level architectural components for Azure VMware Solution
 
-TODO: Intro Text
+These topics will focus on the fundamental aspects of the Azure VMware Solution and allow you to understand the basic construct of the solution.
 
 | Title | Type | Reference |
 | --- | --- | --- |
@@ -21,10 +21,12 @@ TODO: Intro Text
 
 ## Network & Connectivity architecture patterns
 
-TODO: Intro Text
+The networking aspect of the Azure VMware Solution is generally an area that would require a substantial amount of planning, especially if this is your Azure service that you are deploying. Taking the required time early one and spending the time to understand these concepts will be very beneficial in creating a well designed, well connected and reliable solution.
 
 | Title | Type | Reference |
 | --- | --- | --- |
 | Example architectures for Azure VMware Solutions | MS learn | [Link](https://learn.microsoft.com/azure/cloud-adoption-framework/scenarios/azure-vmware/example-architectures) |
 | Enable connectivity from Azure VMware Solution | MS learn | [Link](https://learn.microsoft.com/azure/cloud-adoption-framework/scenarios/azure-vmware/network-hub-spoke) |
 | Azure VMware Solution multi-region network considerations | MS learn | [Link](https://learn.microsoft.com/azure/cloud-adoption-framework/scenarios/azure-vmware/eslz-dual-region-network-topology) |
+| What is Azure ExpressRoute? | MS Learn | [Link](https://learn.microsoft.com/azure/expressroute/expressroute-introduction) |
+| About ExpressRoute Global Reach | MS Learn | [Link](https://learn.microsoft.com/azure/expressroute/expressroute-global-reach) |
