@@ -26,8 +26,8 @@
 # *.txt @octo-org/octocats
 
 /hybrid @igomaa @FloKlaffenbach
-/specialized/avs @robinher @MGodfrey50
-/specialized/sap
+/specialized/avs @robinher @MGodfrey50 @fskelly
+/specialized/sap @mottach
 /migrationAndManagement/management @josefehse
 /migrationAndManagement/migration @brsteph @JCoreMS
 
