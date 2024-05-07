@@ -1,6 +1,5 @@
-# Welcome Kit - Azure VMware Solution - Architecture - Draft
+# Welcome Kit - Azure VMware Solution - Architecture
 
-TODO: Remove _**DRAFT**_  
 [Home](../readme.md)  
 [High-level architectural components for Azure VMware Solution](#high-level-architectural-components-for-azure-vmware-solution)  
 [Network \& Connectivity architecture patterns](#network--connectivity-architecture-patterns)
