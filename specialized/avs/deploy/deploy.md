@@ -2,7 +2,7 @@
 
 [Home](../readme.md)  
 
-The correct and careful planned deployment of an Azure VMware Solution environment, having taken learnings from previous deployments like a Proof of Concept, is a big undertaking due to the nature and dependency on other technologies that is unique to this solution. THe links and references below should help to make this journey quicker, more efficient and better aligned to your company standards with the use of the Enterprise Scale tooling and use of the [Cloud Adoption Framework](https://learn.microsoft.com/azure/cloud-adoption-framework/scenarios/azure-vmware/)
+The correct and careful planned deployment of an Azure VMware Solution environment, having taken learnings from previous deployments like a Proof of Concept, is a big undertaking due to the nature and dependency on other technologies that is unique to this solution. The links and references below should help to make this journey quicker, more efficient and better aligned to your company standards with the use of the Enterprise Scale tooling and use of the [Cloud Adoption Framework](https://learn.microsoft.com/azure/cloud-adoption-framework/scenarios/azure-vmware/)
 
 TODO: Use AVS Implementation Guide (XLS Review) as a reference for the following content.
 Azure Landing Zone?
