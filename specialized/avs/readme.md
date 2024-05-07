@@ -38,4 +38,4 @@ In this [section](govern/govern.md) we will cover key aspects that should be inc
 
 ## Secure  
 
-TODO: Add Secure Intro
+In this [section](secure/secure.md) we will cover key aspects that should be included in all _**security related**_ areas of your deployment, these include security considerations and baselines that are applicable to Azure VMware Solution.
