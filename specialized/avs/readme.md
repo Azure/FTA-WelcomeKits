@@ -26,7 +26,7 @@ In this [section](prepare/prepare.md) we will explain the fundamental concepts t
 
 ## Deploy  
 
-In this [section](deploy/deploy.md) we will explain the options avaialble to and highlight some key focus areas when you are ready to start deploying your Azure VMware Solution. Please do **NOT** skip here directly. [**Design**](architectureAndDesign/design.md), [**Architecture**](architectureAndDesign/architecture.md), [**Plan**](plan/plan.md) and [**Prepare**](prepare/prepare.md) are key aspects to ensure success.
+In this [section](deploy/deploy.md) we will explain the options available to and highlight some key focus areas when you are ready to start deploying your Azure VMware Solution. Please do **NOT** skip here directly. [**Design**](architectureAndDesign/design.md), [**Architecture**](architectureAndDesign/architecture.md), [**Plan**](plan/plan.md) and [**Prepare**](prepare/prepare.md) are key aspects to ensure success.
 
 ## Migrate  
 
