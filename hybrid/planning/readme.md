@@ -3,6 +3,7 @@
 [requiredrules]:https://learn.microsoft.com/en-us/azure-stack/hci/concepts/firewall-requirements#required-firewall-urls
 [recommendedrules]:https://learn.microsoft.com/en-us/azure-stack/hci/concepts/firewall-requirements#required-firewall-urls
 [additionalrules]:https://learn.microsoft.com/en-us/azure-stack/hci/concepts/firewall-requirements#firewall-requirements-for-additional-azure-services
+[arbrules]:https://learn.microsoft.com/en-us/azure/azure-arc/resource-bridge/network-requirements
 [internalrules]:https://learn.microsoft.com/en-us/azure-stack/hci/concepts/firewall-requirements#firewall-requirements-for-internal-rules-and-ports
 [azurerequirements]:https://learn.microsoft.com/en-us/azure-stack/hci/concepts/system-requirements?tabs=azure-public#azure-requirements
 [validatedswitched]:https://learn.microsoft.com/en-us/azure-stack/hci/concepts/physical-network-requirements?tabs=overview%2C22H2reqs#network-switches-for-azure-stack-hci
@@ -45,6 +46,7 @@
 [managementandcompute]:https://learn.microsoft.com/en-us/azure-stack/hci/deploy/network-atc?tabs=22H2#compute-and-management-intent
 [switchedstorage]:https://learn.microsoft.com/en-us/azure-stack/hci/concepts/physical-network-requirements?tabs=overview%2C22H2reqs#using-switches
 [switchlessstorage]:https://learn.microsoft.com/en-us/azure-stack/hci/concepts/physical-network-requirements?tabs=overview%2C22H2reqs#using-switchless
+[customiparm]:https://github.com/Azure/azure-quickstart-templates/tree/master/quickstarts/microsoft.azurestackhci/create-cluster-2-node-switched-custom-storageip
 [smbmultichannel]:https://learn.microsoft.com/en-us/azure-stack/hci/manage/manage-smb-multichannel
 [netatcoverrides]:https://learn.microsoft.com/en-us/azure-stack/hci/manage/manage-network-atc?tabs=21H2#update-or-override-network-settings
 [livemigrateqos]:https://learn.microsoft.com/en-us/powershell/module/smbshare/set-smbbandwidthlimit?view=windowsserver2022-ps#example-2-add-an-smb-limit-for-live-migration
@@ -94,6 +96,8 @@ As part of the hybrid capabilities of Azure Stack HCI then there are required to
 
 -   [Additional Services][additionalrules]
 
+With the deployment of Azure Stack HCI 23H2 then it it is advised to allow all ports which are listed as required, recommended and [Azure Arc resource bridge network requirements][arbrules]
+
 In addition to these firewall rules for the outbound internet access there are [rules required for internal traffic flows][internalrules], such as between nodes and with management machines, DC's etc. 
 
 ## Environment Validation
@@ -131,7 +135,6 @@ Setting of of the witness can be complete using with [WAC][wacwitness] or [Power
 The Storage Pool Quorum works independently from the Cluster Quorum as this is designed for clustered and none cluster environment.  Depending on the number of nodes in the system and the presence of a witness dictates the [expected outcome][poolwintessexamples].  Each disk which makes up the storage pool has a vote towards establish quorum of the pool.  It is recommended that each node in your cluster is symmetrical (each node has the same number of drives), and in the event that this is an even number then the owner of the storage pool will also receive a vote to help establish this.
 
 The requirement for the pool to remain in quorum (online) is that 50% + 1 of the votes should be available.  An additional considering is with cluster with 5 nodes or more is that if more than two nodes are down, or two nodes and a disk on another node are down, volumes may not have access to all three copies of their data, and therefore be taken offline and be unavailable. It's recommended to bring the servers back or replace the disks quickly to ensure the most resiliency for all the data in the volume.  This can be helped with the following of the guidelines for the [reserved capacity][reservedcapacity] as this will allow the capacity for data on failed disks to be written to the reserved space.
-
 
 ## Storage
 
@@ -186,6 +189,7 @@ As mentioned above there are a number of different network design patterns which
 
 
 **Storage Traffic/Network**
+
 With regards to the storage traffic then there are again 2 options with regard to connectivity and these are [switched][switchedstorage] and [switchless][switchlessstorage].  Switchless Storage networks requires the connection, back-to-back, of the storage interfaces which means that this does rule out some of the deployment patterns listed above as they need to be physical interfaces.  This can help the reduction of cost of the top of rack switches needed as they will not need to support the storage standards but when going beyond 3 nodes in a cluster the benefit is quickly diminished due to the additional more complex cabling and the recommendation of having 2 resilient connections for storage, means for every node needs to links to every other node in the cluster, e.g a 3 node cluster would need 4 storage interfaces per node, a 4 node cluster would need 6 storage interfaces per node, compared to switched storage networks which only every require a minimum of 2 storage interfaces to provide the resiliency.
 
 Another consideration for the storage traffic is bandwidth.  It is recommended that for the storage interfaces they should be a minimum of 10gb, but if the storage interfaces are shared (like the Fully Converged and Compute with Storage above) or there are 3 nodes or more then the recommended is a minimum of 25gb.  This is even more apparent when the storage is NVMe is used as you would not want the network to be the bottleneck.
@@ -193,6 +197,20 @@ Another consideration for the storage traffic is bandwidth.  It is recommended t
 With 2 storage networks this allows for the use of [SMB Multichannel][smbmultichannel] to provide aggregation of network bandwidth and network fault tolerance.  For this configuration it is advised to have each of the storage networks using different IP networks and VLANS.
 
 ![IP and VLAN Segregation](./../images/storageIPandVLAN.png "IP and VLAN Segregation")
+
+**IP Addressing**
+
+With regards to the IP Address requirements for the management and infrastructure then the following is required:
+
+* 1 x IP address for each node - node management IP
+* 6 x IP addresses (from the same subnet as the node management IP)
+    * 1st IP address is used for the cluster IP Address
+    * 2nd IP address is used for the virtual IP of the Azure Resource Bridge
+    * 3rd and 4th IP addresses are used for the Azure Resource Bridge VM (1 for running VM and the other for update functions)
+    * 5th IP address is intended to for future integration with Network COntrollers with SDN
+    * 6th IP address is reserved for future use
+
+With the storage networks then a unique IP is needed for storage adapter on each node.  The allocation of these IP addresses are handle by Network ATC using the range 10.71.0.0/16, broken down into /24 networks.  e.g. Adapters on storage network 1 will get IP addresses on 10.71.1.0/24, Adapters on storage network 2 will get IP addresses on 10.71.2.0/24.  These networks are non-routable addresses.  If you require to change these IP address then this is possible but currently the deployment would require the deployment to be compute using an [ARM Template][customiparm] where the IP Address ranges are applied in the ARM template.
 
 **Bandwidth Allocation**
 

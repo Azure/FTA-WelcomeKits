@@ -17,9 +17,11 @@
 [preparead]:https://learn.microsoft.com/en-us/azure-stack/hci/deploy/deployment-prep-active-directory
 [arconboarding]:https://learn.microsoft.com/en-us/azure-stack/hci/deploy/deployment-arc-register-server-permissions
 [azurepermissions]:https://learn.microsoft.com/en-us/azure-stack/hci/deploy/deployment-arc-register-server-permissions#assign-required-permissions-for-deployment
-[portaldeplyment]:https://learn.microsoft.com/en-us/azure-stack/hci/deploy/deploy-via-portal
+[portaldeployment]:https://learn.microsoft.com/en-us/azure-stack/hci/deploy/deploy-via-portal
 [tempaltespecs]:https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/template-specs?tabs=azure-powershell
 [armtempaltedeployment]:https://learn.microsoft.com/en-us/azure-stack/hci/deploy/deployment-azure-resource-manager-template
+[biceptempaltedeployment]:https://learn.microsoft.com/en-us/samples/azure/azure-quickstart-templates/create-cluster-with-prereqs/?tabs=azurecli
+[quickstart]:https://github.com/Azure/azure-quickstart-templates/tree/master/quickstarts/microsoft.azurestackhci
 [prepareresource]:https://learn.microsoft.com/en-us/azure-stack/hci/deploy/deployment-azure-resource-manager-template#step-1-prepare-azure-resources
 [assignresourcepermissions]:https://learn.microsoft.com/en-us/azure-stack/hci/deploy/deployment-azure-resource-manager-template#step-2-assign-resource-permissions
 [deploymenttroubleshooting]:https://techcommunity.microsoft.com/t5/fasttrack-for-azure/troubleshooting-azure-stack-hci-23h2-preview-deployments/ba-p/4036222
@@ -49,14 +51,13 @@ When looking to the deployment of Azure Stack HCI then there are a number of des
 
 ## Preparing the Active Directory
 
-As part of the deployment there needs to be pre-staged objects in Active Directory which are then used as part of the deployment.  These are created [automatically with a script][preparead] and this should be ran with different values for each cluster deployed  These include:
+The requirements for Active Directory are:
 
--   A cluster OU which has a Computers and a Users OU.  For these GPO inheritance is blocked to ensure that any existing GPO's to no impact the Azure Stack HCI Nodes
--   A computer object for the cluster and also for each of the nodes, these are in the Computers created as part of this process.
--   A user account which is the LCM user which is is used for the active directory integrations of the cluster during deployment and then also as part of the management lifecycle of the cluster
--   A number of AD groups (Domain Local Groups) which are used for allocation of permissions
+ - A dedicated Organization Unit (OU).
+ - Group policy inheritance that is blocked for the applicable Group Policy Object (GPO).
+ - A user account that has all rights to the OU in the Active Directory.
 
-The values entered during the script will be needed as part of the deployment.
+A [PowerShell module][adprep] is available which can be used set this up these requirements, however this is not a requirement and these can bet set up manually.  A additional consideration is the presences of enforced policies as these will not be blocked when Group policy inheritance that is blocked, alternative methods would need to block these such as [WMI Filter][wmifilter] or [Security Groups][securitygroups].
 
 At this point then consider running the [Active Directory Checker][adchecker] to ensure the node is ready and passes all tests.
 
@@ -65,7 +66,7 @@ At this point then consider running the [Active Directory Checker][adchecker] to
 
 In some cases the hardware will be delivered and will already be prepared with the OS and drivers installed, and the correct firmware installed.  The below is a list of steps to perform on the hardware prior to the deployment:
 
--   [Download the ISO][downloadiso] and [install the OS][installos], this the deployment is at scale you may wish to automate this process using tools such as Window Deployment Servers, or boot strapping the installation
+-   [Download the ISO][downloadiso] and [install the OS][installos], this the deployment is at scale you may wish to automate this process using tools such as Window Deployment Servers, or boot strapping the installation.  Do not install any updates as these are handled as part of the deployment
 -   Ensure the administrator password is identical across all nodes
 -   [Configure an IP address on a single interface][configureos], this will be the 1st of the interfaces which will used as part of the management intent
 -   [Configure a time source on the node][configureos], which is not the BIOS, typically this will be the server which owns the PDC Roles in Active Directory
@@ -79,10 +80,14 @@ In some cases the hardware will be delivered and will already be prepared with t
     - smb-1
     - smb-2
 -   Ensure there is only one default route existing on each node
--   Create an additional local administrator account on each node, this can be then used as part of the deployment (the “administrator” account is disabled at the end of the deployment)
+-   Create an additional local administrator account on each node, this can be then used as part of the deployment (the “administrator” account is renamed to "ASBuiltInAdmin" at the end of the deployment)
 -   Ensure that the name, driver version, firmware version and component ID is consistent across all nodes and adapter usage types e.g. they should be consistent across comp-mgmt-1 and comp-mgmt-2 across all nodes.  (this is required for Network ATC)
   
 At this point then consider running the [Hardware Checker][hardwarechecker] to ensure the node is ready and passes all tests.
+
+## Preparing the networking
+
+With regards to the networking then it is important to remember that during the deployment as part of the Network ATC and RDMA configuration that a VLAN tag is applied to the storage interfaces, due to this it is mot likely that the switch ports which the the storage adapters are connected to will need to be set as trunk ports with the intended VLANs for storage set as allowed ports.  If the port is set as an access port with the VLAN set or the intended VLAN for storage is set ad the native/default VLAN then the traffic will be dropped due to the double tagging of the VLAN.
 
 ## Arc Registration and Permissions
 
@@ -93,7 +98,7 @@ The next stage is to onboard the nodes to Azure.  A [script is provided which wi
 -   Remote Edge Support
 -   Telemetry and Diagnostics
 
-When the script is showing as complete there is some time that it takes for the installation to complete so it is important to check the node resource in the Azure Portal and ensure that it shows all Extensions are successfully installed.
+When the script is showing as complete there is some time that it takes for the installation to complete so it is important to check the node resource in the Azure Portal and ensure that it shows all Extensions are successfully installed.  If there is a failure the extension can be re-moved from the portal and then re-installed by re-running the onboarding script.
 
 There are 2 locations which [Azure Permissions][azurepermissions] need to be set.  They are:
 
@@ -110,8 +115,11 @@ There are 2 locations which [Azure Permissions][azurepermissions] need to be set
 
 The actual configuration and deployment of the cluster is is now totally cloud/Azure Portal driven and uses the Azure Arc Extensions to initiate nd then track the deployment progress.  There are 2 methods for the deployment are they are:
 
--   [Portal Deployment][portaldeplyment] - this is a manual process of entering all of the setting.  You can also use [Arm Template Specs][tempaltespecs] which can pre-populate a number of the fields to allow for a consistency across the deployment, e.g. configuration of intents, domain and OU name
--   [ARM Template][armtempaltedeployment]  - this is the standard ARM Template deployment approach with requires the json template and also a parameters while which will be specific to the deployment.  With this approach there are some [resource which need to be pre-deployed][prepareresource] and also some [additional permissions][assignresourcepermissions] which need to be assigned.
+-   [Portal Deployment][portaldeployment] - this is a manual process of entering all of the setting.  You can also use [Arm Template Specs][tempaltespecs] which can pre-populate a number of the fields to allow for a consistency across the deployment, e.g. configuration of intents, domain and OU name
+-   [ARM Template][armtempaltedeployment]  - this is the standard ARM Template deployment approach with requires the json template and also a parameters while which will be specific to the deployment.  With this approach there are some [resource which need to be pre-deployed][prepareresource] and also some [additional permissions][assignresourcepermissions] which need to be assigned.  This does require the template to be ran in validation mode and then deploy mode.
+-   [BICEP Template][biceptempaltedeployment]  - this is the standard BICEP Template deployment approach with requires the json template and also a parameters while which will be specific to the deployment.  This template will deploy the additional resources required and does require the template to be ran in validation mode and then deploy mode.
+
+[Quick Start Templates][quickstart] for both ARM and BICEP are available are a starting position for the deployment.
 
 With the Portal Deployment method there will then be a number of resources which are created automatically they are:
 
@@ -122,7 +130,9 @@ With the Portal Deployment method there will then be a number of resources which
 - Permissions to the Key Vault
 - The credentials for the LCM user, local user and keys for the storage accounts will be written to the Key Vault
 
-Once this is complete then the next step is to run the validation.  This includes all of the checked which have been mentioned in the Deployment Planning and Readiness, so these should complete successfully, if the readiness checks have been complete.
+During the section of the deployment where the storage is configured if the option to only create the infrastructure volume then the volumes for the workloads will need to be created manually.  If the option to to create the volumes is selected then these volumes are created as 
+
+Once this is complete then the next step is to run the validation.  This includes all of the checks which have been mentioned in the Deployment Planning and Readiness, so these should complete successfully, if the readiness checks have been complete.
 
 Once these are successful then then the deployment can now be started.  It is expected the deployment to take 2.5-3 hours with some steps taking 30-45 minutes to complete. This deployment process can be monitored from the Azure Stack HCI Cluster Resource and then under deployments.
 
