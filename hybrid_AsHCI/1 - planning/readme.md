@@ -208,7 +208,7 @@ With regards to the IP Address requirements for the management and infrastructur
     * 2nd IP address is used for the virtual IP of the Azure Resource Bridge
     * 3rd and 4th IP addresses are used for the Azure Resource Bridge VM (1 for running VM and the other for update functions)
     * 5th IP address is intended to for future integration with Network COntrollers with SDN
-    * 6th IP address is reserved for future use
+    * 6th IP address is used as part of the update process
 
 With the storage networks then a unique IP is needed for storage adapter on each node.  The allocation of these IP addresses are handle by Network ATC using the range 10.71.0.0/16, broken down into /24 networks.  e.g. Adapters on storage network 1 will get IP addresses on 10.71.1.0/24, Adapters on storage network 2 will get IP addresses on 10.71.2.0/24.  These networks are non-routable addresses.  If you require to change these IP address then this is possible but currently the deployment would require the deployment to be compute using an [ARM Template][customiparm] where the IP Address ranges are applied in the ARM template.
 
