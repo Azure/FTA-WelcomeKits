@@ -32,6 +32,7 @@ Customers and General Audience:
 For Fasttrack Engineers
 ---
 Dear FastTrack Engineer and Customers please proceed with the following Steps (customers not working with FastTrack don't need to provide CERES ID):
+
 **1. Initial Survey:** (Please respond this initial Survey before downloading the Starter Guide: [Initial Survey](https://forms.office.com/r/0iBfRex14H)
 
 **2. Download the Starter Guide:** [SAP on Azure Starter Guide](https://github.com/Azure/FTA-WelcomeKits/blob/main/specialized/sap/SAP%20on%20Azure%20Starter%20Guide%20for%20HANA%20based%20workloads%20v2.pdf)
