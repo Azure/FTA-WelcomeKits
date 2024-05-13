@@ -28,7 +28,9 @@ SAP on Azure Fasttrack WW team.
 ---
 Dear FastTrack Engineer and Customers please proceed with the following Steps (customers not working with FastTrack don't need to provide CERES ID):
 **1. Initial Survey:** (Please respond this initial Survey before downloading the Starter Guide: [Initial Survey](https://forms.office.com/r/0iBfRex14H)
+
 **2. Download the Starter Guide:** [SAP on Azure Starter Guide](https://github.com/Azure/FTA-WelcomeKits/blob/main/specialized/sap/SAP%20on%20Azure%20Starter%20Guide%20for%20HANA%20based%20workloads%20v2.pdf)
+
 **3. Closeout Survey:**(Please respond this Survey at the end of the engagement after the Starter Guide usage: [Closeout Survey](https://forms.office.com/r/zYVq3tzqQb)
 
 **If you want to know more what is the FastTrack for Azure and want our help during your migration, modernization or implementation project, please take a look at the following [link](https://azure.microsoft.com/en-us/pricing/offers/azure-fasttrack)**
