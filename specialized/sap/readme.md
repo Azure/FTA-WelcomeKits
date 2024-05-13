@@ -27,8 +27,7 @@ SAP on Azure Fasttrack WW team.
 
 ---
 Customers and General Audience
----
-Download the Starter Guide:** [SAP on Azure Starter Guide](https://github.com/Azure/FTA-WelcomeKits/blob/main/specialized/sap/SAP%20on%20Azure%20Starter%20Guide%20for%20HANA%20based%20workloads%20v2.pdf)
+**Download the Starter Guide:** [SAP on Azure Starter Guide](https://github.com/Azure/FTA-WelcomeKits/blob/main/specialized/sap/SAP%20on%20Azure%20Starter%20Guide%20for%20HANA%20based%20workloads%20v2.pdf)
 ---
 For Fasttrack Engineers
 ---
