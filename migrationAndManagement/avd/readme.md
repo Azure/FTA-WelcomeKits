@@ -77,4 +77,4 @@
 ## AVD Videos
 
 - [Azure Academy](https://www.youtube.com/playlist?list=PL-V4YVm6AmwXGvQ46W8mHkpvm6S5IIitK)
-- 
+- [How to get started FAST AVD for Beginners](https://learn.microsoft.com/shows/learn-live/fasttrack-for-azure-season-2-ep08-how-to-get-started-fast-azure-virtual-desktop-for-beginners/)
