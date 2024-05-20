@@ -1,5 +1,7 @@
 # Azure Virtual Desktop Welcome Kit
 
+Welcome to the Azure Virtual Desktop Welcome kit. Below are broken up sections that will help you learn and deploy your Azure Virtual Desktop environment.
+
 ![Azure Virtual Desktop Architecture](./images/avddesign.png)
 
 ## Getting Started
@@ -28,7 +30,7 @@
 
 ## Azure Virtual Desktop Infrastructure
 
-- [AVD Agent](https://learn.microsoft.com/azure/virtual-desktop/agent-overview))
+- [AVD Agent](https://learn.microsoft.com/azure/virtual-desktop/agent-overview)
 - [Load Balancing Methods](https://learn.microsoft.com/azure/virtual-desktop/host-pool-load-balancing)
 - [Customize RDP Properties](https://learn.microsoft.com/azure/virtual-desktop/customize-rdp-properties)
 - [Scheduled Agent Updates](https://learn.microsoft.com/azure/virtual-desktop/scheduled-agent-updates)
