@@ -34,8 +34,7 @@ Resources are still available for the deployment of 22H2:
 
 -   [Deploying single site cluster with 22H2][deploy22h2]
 -   [Deploying single site cluster with 22H2 Video Series][deploy22h2video]
--   [Deploying stretch cluster with 22H2][stretchcluster22h2]
--   [Deploying stretch cluster with 22H2 Video Series][stretchcluster22h2video]
+
   
 ## Deployment Planning and Readiness
 
