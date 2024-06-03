@@ -6,7 +6,7 @@
   - update AVD section for 23H2
     - ~~(rename blabla....md to readme.md) - Complete in Branch~~
   - update migration section 
-    - ~~ (rename migration.md to readme.md) - Complete in Branch~~
+    - ~~(rename migration.md to readme.md) - Complete in Branch~~
     - check for updates
     - consider YT (robocopy, replica,...)
   - ~~Create Dataservices workitem and remove the path from the github repo - Complete in Branch~~
@@ -19,12 +19,13 @@
 - think about renaming 'hybrid' to AzStack HCI
   - ~~rename to hybrid_AsHCI - Complete in Branch~~
   - workitem for steve to change short links. When merge branch.
-- add ToContent into the readme.md
-- Create a section for 'ARC Enabled VMS' under scenarios
+- [bfrank] add ToContent into the readme.md
+- [bfrank] AVD 23H2 rehaul 
+- [steve] Create a section for 'ARC Enabled VMS' under scenarios
 - ~~remove tools section for now. - Complete in Branch~~
-- add navigation to come back to the TOC or topmost readme.md
+- [bfrank] add navigation to come back to the TOC or topmost readme.md
 
-- add Learning / Lab section (including the different possibilities e.g. hcibox, createhypervvms)
+- [TBD] add Learning / Lab section (including the different possibilities e.g. hcibox, createhypervvms)
   - hand-on-labs
     - environments and how to build them (hcibox, createhypervvms,....)
     - 0-prerequisites, (sizing & validation)
