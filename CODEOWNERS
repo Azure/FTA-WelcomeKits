@@ -30,6 +30,7 @@
 /specialized/sap @mottach
 /migrationAndManagement/management @josefehse
 /migrationAndManagement/migration @brsteph @JCoreMS
+/migrationAndManagement/arcEnabledServers @mbrat2005 @MGodfrey50
 
 # The `docs/*` pattern will match files like
 # `docs/getting-started.md` but not further nested files like
