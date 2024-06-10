@@ -1,4 +1,4 @@
-# Azure Hybrid Welcome Kit - Scenarios
+# 4 - scenario: Services and Applications
 
 ## Table Of Content
 - [Scenarios - Azure Stack HCI - AKS hybrid](./aksworkload/readme.md)

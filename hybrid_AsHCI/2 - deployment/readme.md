@@ -3,7 +3,7 @@
 [22h2]:./cluster/Standard_Cluster_build.md
 [sdn]:./sdn/readme.md
 
-# Azure Hybrid Welcome Kit - Cluster Deployment
+# 2 - deployment: Cluster Deployment Options & Creation
 
 Depending on the cluster architecture selected then the deployment options which are available, and currently which version of Azure Stack HCI will be deployed, either 22H2 or 23H2.  The deployment options are:
 

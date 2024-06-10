@@ -1,4 +1,4 @@
-# Azure Hybrid Welcome Kit - Cluster Governance
+# 3 - governance:  Management and Migration
 
 ## Table Of Content
 - [Cluster Governance - Azure Stack HCI - Management](ClusterManagement.md)
