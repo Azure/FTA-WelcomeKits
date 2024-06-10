@@ -1,3 +1,3 @@
 # Welcome Kit – Azure Stack HCI – AKS  
 
-TBD
+TBD - content should go here.

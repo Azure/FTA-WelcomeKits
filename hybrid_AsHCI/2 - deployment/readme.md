@@ -11,3 +11,5 @@ Depending on the cluster architecture selected then the deployment options which
 - If [stretch cluster][stretch] is required then, currently, 22H2 needs to be deployed.
 - If there is a requirement to deploy [Azure Stack HCI 22H2][22H2] then this is still supported and an upgrade for this to 23H2 is expected in coming months
 - SDN is an optional (at the moment) post-deployment setup - relevant information can be found here [SDN][sdn].
+
+[◀ 1 - planning](../1%20-%20planning/readme.md) | [🔼 hybrid_AsHCI](../readme.md) | [3 - governance ▶](../3%20-%20governance/readme.md)

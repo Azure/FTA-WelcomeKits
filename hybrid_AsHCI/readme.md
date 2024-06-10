@@ -26,4 +26,10 @@ Welcome to the ultimate guide for Azure Stack HCI enthusiasts! Whether you are e
   - **Management:** Advanced management practices for Azure Stack HCI, focusing on operational efficiency, resource optimization, and continuous system improvement ([Management Best Practices](https://aka.ms/FTAWelcomeKit/Hybrid/Management)).
 
 - **Other Services:**
-  - **Additional Services:** Exploration of further services and capabilities within the Azure Stack HCI ecosystem, addressing unique organizational needs and objectives ([Explore Additional Services](https://aka.ms/FTAWelcomeKit/Hybrid)).
+  - **Additional Services:** Exploration of further services and capabilities within the Azure Stack HCI ecosystem, addressing unique organizational needs and objectives ([Explore Additional Services](https://aka.ms/FTAWelcomeKit/Hybrid)).  
+
+## Table Of Content
+- [1 - planning](./1%20-%20planning/readme.md)
+- [2 - deployment](./2%20-%20deployment/readme.md)
+- [3 - governance](./3%20-%20governance/readme.md)
+- [4 - scenario](./4%20-%20scenario/readme.md)  

@@ -19,11 +19,11 @@
 - think about renaming 'hybrid' to AzStack HCI
   - ~~rename to hybrid_AsHCI - Complete in Branch~~
   - workitem for steve to change short links. When merge branch.
-- [bfrank] add ToContent into the readme.md
+~~- [bfrank] add ToContent into the readme.md~~
 - [bfrank] AVD 23H2 rehaul 
 - [steve] Create a section for 'ARC Enabled VMS' under scenarios
 - ~~remove tools section for now. - Complete in Branch~~
-- [bfrank] add navigation to come back to the TOC or topmost readme.md
+~~- [bfrank] add navigation to come back to the TOC or topmost readme.md~~
 
 - [TBD] add Learning / Lab section (including the different possibilities e.g. hcibox, createhypervvms)
   - hand-on-labs
