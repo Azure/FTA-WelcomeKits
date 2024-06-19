@@ -3,7 +3,6 @@
 
 
 - validate hybrid documentation for accuracy on 23H2 build
-  - update AVD section for 23H2
     - ~~(rename blabla....md to readme.md) - Complete in Branch~~
   - update migration section 
     - ~~(rename migration.md to readme.md) - Complete in Branch~~
@@ -11,7 +10,7 @@
     - consider YT (robocopy, replica,...)
   - ~~Create Dataservices workitem and remove the path from the github repo - Complete in Branch~~
   - ~~Create BCDR  workitem and remove the path from the github repo  - Complete in Branch~~
-  - update AKS section - workitem
+  - ~~update AKS section - workitem -> Belgin and Victor will take care of this.~~
   - Update Deployment section
     - SDN Deployment guide renamed to readme.md
     - Cluster Deplotment Section add a sub content as readme.md, and also removed Campus Cluster
@@ -24,6 +23,14 @@
 - [steve] Create a section for 'ARC Enabled VMS' under scenarios
 - ~~remove tools section for now. - Complete in Branch~~
 ~~- [bfrank] add navigation to come back to the TOC or topmost readme.md~~
+
+[AKS - Belgin / Victor] 
+- networking.
+- authentication and authorization
+- deployment.
+- managing and operations.
+- updating?
+- day2 (storage, adv. load balancing solutios.)
 
 - [TBD] add Learning / Lab section (including the different possibilities e.g. hcibox, createhypervvms)
   - hand-on-labs
