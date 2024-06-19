@@ -8,7 +8,7 @@ main:
     ref: "hybrid"
     sub:
       - name: Arc-enabled Servers
-        ref: arcEnabledServers
+        ref: hybrid/arcEnabledServers
   - name: Migration and Management
     ref: "migrationAndManagement"
   - name: Specialized Workloads
