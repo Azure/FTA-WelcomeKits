@@ -5,7 +5,7 @@ geekdocAlign: left
 geekdocAnchor: true
 ---
 
-# Arc-enabled Servers Overview
+# Overview
 
 Arc-enabled servers are those systems outside of Azure on which you have installed the Azure Connected machine Agent. By installing this agent and connecting it to Azure, you are enabling the management of these systems through the Azure control plane--called Azure Resource Manager. With Azure now aware of your machines, you have the option to manage all your machines on and off Azure with the same tools, in addition to streamlining aspects of machine and application configuration.
 

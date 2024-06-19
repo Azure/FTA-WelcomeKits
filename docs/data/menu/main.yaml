@@ -8,7 +8,12 @@ main:
     ref: "hybrid"
     sub:
       - name: Arc-enabled Servers
-        ref: hybrid/arcEnabledServers
+        ref: hybrid/arcEnabledServers/Overview
+        sub: 
+          - name: Extended Support Updates
+            ref: ESU
+          - name: Update Management
+            ref: UpdateManagement
   - name: Migration and Management
     ref: "migrationAndManagement"
   - name: Specialized Workloads
