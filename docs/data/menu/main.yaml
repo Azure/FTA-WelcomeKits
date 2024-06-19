@@ -1,0 +1,12 @@
+---
+main:
+  - name: Cloud Native
+    ref: "cloudNative"
+  - name: Foundational Tech
+    ref: "foundationalTech"
+  - name: Hybrid
+    ref: "hybrid"
+  - name: Migration and Management
+    ref: "migrationAndManagement"
+  - name: Specialized Workloads
+    ref: "specialized"
