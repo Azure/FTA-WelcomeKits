@@ -1,3 +1,10 @@
+---
+title: Update Management
+geekdocNav: true
+geekdocAlign: left
+geekdocAnchor: true
+---
+
 # Update Management with Azure Arc
 
 After the Azure Connected Machine Agent has been deployed to your machines, you are ready to use Azure Update Manager--no additional monitoring agent or workspace required. Instead, Update Manager operations are handled by Arc Extension operations, so that each time you request an assessment or installation, the Update Manager extension is used to execute you request on your Arc Machine.

@@ -1,3 +1,10 @@
+---
+title: Extended Security Updates
+geekdocNav: true
+geekdocAlign: left
+geekdocAnchor: true
+---
+
 # Extended Support Updates (ESUs) through Azure Arc
 
 Customers with older versions of Windows or SQL may be interested in Arc-enabled Servers to simplify their ESU licensing. To purchase ESU licensing, you have two primary options:
