@@ -6,6 +6,9 @@ main:
     ref: "foundationalTech"
   - name: Hybrid
     ref: "hybrid"
+    sub:
+      - name: Arc-enabled Servers
+        ref: arcEnabledServers
   - name: Migration and Management
     ref: "migrationAndManagement"
   - name: Specialized Workloads
