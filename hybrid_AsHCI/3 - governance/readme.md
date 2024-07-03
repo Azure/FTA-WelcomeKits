@@ -8,4 +8,4 @@
   
     
 
-[◀ 2 - deployment](../2%20-%20deployment/readme.md) | [🔼 hybrid_AsHCI](../readme.md) | [4 - scenario ▶](../4%20-%20scenario/readme.md)
+[◀ 2 - deployment](../2%20-%20deployment/readme.md) | [🔼 hybrid_AsHCI](../readme.md) | [4 - scenarios ▶](../4%20-%20scenarios/readme.md)

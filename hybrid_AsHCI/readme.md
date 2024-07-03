@@ -20,7 +20,7 @@ Welcome to the ultimate guide for Azure Stack HCI enthusiasts! Whether you are e
 - **Management:** Advanced management practices for Azure Stack HCI, focusing on operational efficiency, resource optimization, and continuous system improvement ([Management Best Practices](https://aka.ms/FTAWelcomeKit/Hybrid/Management)).
 - **Hybrid Security:** Establishment of robust security frameworks, ensuring comprehensive protection of data and applications in hybrid cloud and on-premises environments ([Hybrid Security Protocols](https://aka.ms/FTAWelcomeKit/Hybrid/Security)).
 
-## [4 - scenario: Services and Applications](./4%20-%20scenario/readme.md)  
+## [4 - scenarios: Services and Applications](./4%20-%20scenarios/readme.md)  
 - **SQL MI:** Deployment of SQL Managed Instances in Azure, providing sophisticated database management capabilities and optimizations within Azure Stack HCI frameworks ([SQL MI Integration](https://aka.ms/FTAWelcomeKit/Hybrid/SQLMI)).
 - **App Services:** Efficient management and deployment of web applications, leveraging Azure Stack HCI's capabilities for enhanced application performance and reliability ([App Services Deployment](https://aka.ms/FTAWelcomeKit/Hybrid/Appservices)).
 - **AVD on HCI:** Integration of Azure Virtual Desktop within HCI, offering secure and scalable virtual desktop infrastructure solutions ([AVD on HCI Implementation](https://aka.ms/FTAWelcomeKit/Hybrid/AVDonHCI)).
