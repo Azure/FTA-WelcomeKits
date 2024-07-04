@@ -1,11 +1,11 @@
 # 1 - planning: Infrastructure Setup and Integration
 
 ## Exercises to Right-Size Azure Stack HCI 23H2
-**Exercise 1:** Understanding Azure Stack HCI 23H2 Requirements
+Understanding Azure Stack HCI 23H2 Requirements
 Objective: Familiarize yourself with the hardware and software requirements for Azure Stack HCI 23H2 to ensure a successful deployment.
 
-**Tasks:**
-- Research the minimum hardware requirements for Azure Stack HCI 23H2.
+Research to find the Answers on the following questions:
+- Your Azure Stack HCI cluster (23H2) can contain ___ to ___ nodes.
 - Identify the software prerequisites needed for Azure Stack HCI 23H2.
 
 
@@ -15,23 +15,23 @@ Objective: Assess your current infrastructure to determine if it meets the requi
 **Tasks:**
 - Inventory your current hardware and software.
 - Compare your current infrastructure against the Azure Stack HCI 23H2 requirements.
-Do To:
-Table of VMs   
-
-| Name | RAM (GB) | vCPU | Storage (GB) | Purpose & Annotations (IOPS, Bandwith requirements) |
-|--|--|--|--|--|
-|  VM1| 4 | 4 | 128 | FileServer (40K8kIOPS, 10Gbit) |
-|  |  |  |  |  |
-
-Add sample Excel sheet.
-
 
 **Exercise 3:** Planning for Scalability and Performance
 Objective: Plan your Azure Stack HCI 23H2 deployment for scalability and performance based on your organization's needs.
 
 Tasks:
+Estimate your organization's workload requirements by creating a table of VMs and its sizes:  
 
-Estimate your organization's workload requirements.
+| Name | RAM (GB) | vCPU | Storage (GB) | OS | Purpose & Annotations (IOPS, Bandwith requirements, VLANID,...) | 
+|--|--|--|--|--|--|
+|  FS01| 16 | 8 | 128 + 500 | Win Srv 2016 | FServer user profiles 1 (60K8kIOPS, 10Gbit) |
+|  VDI01| 8 | 4 | 128 | Win Srv 2012R2 | VDI-1 (10K8kIOPS, 1Gbit) |
+|  VDI02| 8 | 4 | 128 | Win Srv 2012R2 | VDI-2 (10K8kIOPS, 1Gbit) |
+|  FW01| 8 |6 | 96 | Ubuntu 22.04 | FWall (2x10Gbit) |
+|  |  |  |  |  |
+
+[bfrank] ToDo: Add sample Excel sheet here
+
 Determine the optimal configuration for storage, compute, and networking to meet these requirements.
 Document a scalability plan that includes potential future growth.
 Exercise 4: Cost Estimation and Optimization

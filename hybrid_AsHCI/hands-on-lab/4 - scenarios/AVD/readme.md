@@ -12,4 +12,4 @@
 5. Log on as user
 6. 
 
-[🔼 4 - scenarios ▶](../readme.md)
+[🔼 4 - scenarios](../readme.md)

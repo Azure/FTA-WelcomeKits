@@ -1,3 +1,5 @@
+[JumpstartHCIBox]:https://azurearcjumpstart.io/azure_jumpstart_hcibox
+
 # 2 - deployment: Cluster Deployment
 
 ## Introduction
@@ -8,12 +10,24 @@ Azure Stack HCI is a hyper-converged infrastructure (HCI) solution that combines
 - Compatible hardware as per Microsoft's requirements.
 - An active Azure subscription.
 
-## HCI LAB Options
-1) Your validated HW (Real physics)
-2) Old HW with Hyper-V and a virtualized AzStack HCI
-3) Jumpbox (no HW - Azure Only)
+## HCI Lab Options
+>Note: There are several possibilites you have to setup a lab environment. You could use:  
+1) ...your HCI validated hardware (i.e. on real physics)
+2) ...older server HW with Hyper-V installed and setup a virtualized (nested) AzStack HCI
+3) ...the [Jumpstart HCIBox](JumpstartHCIBox) when you have no HW and want to simulate it in Azure instead.
 4) ...
->Note: the following labs assume you are using option 2) 
+>Important note: For the following labs the assumption is that you are using option 2) - So if you are chosing any other option some steps - screenshots may differ a little.
+
+SECTION: DEPLOY AND INSTALL
+AD Prep
+Downloading HCI....
+Installing HCI
+ARC Registration
+Portal Deployment (Validation)
+Portal Deployment (Deployment)
+Update from Portal (Azure Update Manager)
+Collect Logs
+
 
 ## Setting Up the Environment
 1. Ensure your hardware meets the necessary requirements.
