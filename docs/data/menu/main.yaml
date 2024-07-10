@@ -27,14 +27,14 @@ main:
               - name: 'Cluster'
                 ref: hybrid/deployment/cluster
                 sub:
-                  - name: 'Campus Cluster'
-                    ref: 'hybrid/deployment/cluster/Campus_Cluster_build'
+                  # - name: 'Campus Cluster'
+                  #   ref: 'hybrid/deployment/cluster/Campus_Cluster_build'
                   - name: '23H2 Deployment'
                     ref: 'hybrid/deployment/cluster/Deployment-23H2'
-                  - name: 'Standard Cluster Build'
-                    ref: 'hybrid/deployment/cluster/Standard_Cluster_Build'
-                  - name: 'Stretch Cluster Build'
-                    ref: 'hybrid/deployment/cluster/Stretch_Cluster_build'
+                  # - name: 'Standard Cluster Build'
+                  #   ref: 'hybrid/deployment/cluster/Standard_Cluster_Build'
+                  # - name: 'Stretch Cluster Build'
+                  #   ref: 'hybrid/deployment/cluster/Stretch_Cluster_build'
               - name: SDN
                 ref: hybrid/deployment/sdn/Azure_Stack_HCI_SDN_deployment_guide
           - name: Governance
