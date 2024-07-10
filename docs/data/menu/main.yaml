@@ -22,7 +22,6 @@ main:
       - name: Azure Stack HCI
         sub:
           - name: Deployment
-            ref: hybrid/deployment
             sub:
               - name: 'Cluster'
                 ref: cluster
@@ -38,7 +37,6 @@ main:
               - name: SDN
                 ref: hybrid/Azure_Stack_HCI_SDN_deployment_guide
           - name: Governance
-            ref: hybrid/governance
             sub: 
               - name: Cluster Management
                 ref: hybrid/governance/ClusterManagement
@@ -59,11 +57,11 @@ main:
               - name: Azure Virtual Desktop
                 ref: hybrid/scenario/avd/Azure_Stack_HCI_AVD_deployment_guide
               - name: BCDR
-                ref: hybrid/scenario/Azure_Stack_HCI_AVD_deployment_guide
+                ref: hybrid/scenario/bcdr/bcdr
               - name: Data Services
                 ref: hybrid/scenario/dataservices/DataServices_integration
               - name: Migration
-                ref: hybrid/scenario/migration
+                ref: hybrid/scenario/migration/migration
           - name: tools
             ref: hybrid/tools
   - name: Migration and Management
@@ -75,7 +73,11 @@ main:
       ref: specialized/avs
       sub:
         - name: Architecture and Design
-          ref: specialized/avs/architectureAndDesign
+          sub: 
+            - name: Architecture
+              ref: specialized/avs/architectureAndDesign/architecture
+            - name: Design
+              ref: specialized/avs/architectureAndDesign/design
         - name: Deployment
           ref: specialized/avs/deploy
         - name: Governance
@@ -92,4 +94,4 @@ main:
       ref: specialized/sap
       sub:
         - name: SAP on Azure Starter Guide
-          ref: specialized/sap/SAP on Azure Starter Guide for HANA based workloads v2.pdf
+          ref: 'specialized/sap/SAP on Azure Starter Guide for HANA based workloads v2.pdf'
