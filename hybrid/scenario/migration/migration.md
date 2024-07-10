@@ -1,1 +1,1 @@
-The page you are looking for has been moved to [https://aka.ms/FTA-WelcomeKit//hybrid/scenario/migration/migration](https://aka.ms/FTA-WelcomeKit_Migration//hybrid/scenario/migration/migration). Please update your references.
+The page you are looking for has been moved to [https://aka.ms/FTA-WelcomeKits/hybrid/scenario/migration/migration](https://aka.ms/FTA-WelcomeKits_Migration/hybrid/scenario/migration/migration). Please update your references.

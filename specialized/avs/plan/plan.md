@@ -1,1 +1,1 @@
-The page you are looking for has been moved to [https://aka.ms/FTA-WelcomeKit//specialized/avs/plan/plan](https://aka.ms/FTA-WelcomeKit_Migration//specialized/avs/plan/plan). Please update your references.
+The page you are looking for has been moved to [https://aka.ms/FTA-WelcomeKits/specialized/avs/plan/plan](https://aka.ms/FTA-WelcomeKits_Migration/specialized/avs/plan/plan). Please update your references.

@@ -1,1 +1,1 @@
-The page you are looking for has been moved to [https://aka.ms/FTA-WelcomeKit//hybrid/scenario/aksworkload/Azure_Stack_HCI_AKS_Fundamentals_FAQ](https://aka.ms/FTA-WelcomeKit_Migration//hybrid/scenario/aksworkload/Azure_Stack_HCI_AKS_Fundamentals_FAQ). Please update your references.
+The page you are looking for has been moved to [https://aka.ms/FTA-WelcomeKits/hybrid/scenario/aksworkload/Azure_Stack_HCI_AKS_Fundamentals_FAQ](https://aka.ms/FTA-WelcomeKits_Migration/hybrid/scenario/aksworkload/Azure_Stack_HCI_AKS_Fundamentals_FAQ). Please update your references.

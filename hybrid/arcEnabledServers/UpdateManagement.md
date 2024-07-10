@@ -1,1 +1,1 @@
-The page you are looking for has been moved to [https://aka.ms/FTA-WelcomeKit//hybrid/arcEnabledServers/UpdateManagement](https://aka.ms/FTA-WelcomeKit_Migration//hybrid/arcEnabledServers/UpdateManagement). Please update your references.
+The page you are looking for has been moved to [https://aka.ms/FTA-WelcomeKits/hybrid/arcEnabledServers/UpdateManagement](https://aka.ms/FTA-WelcomeKits_Migration/hybrid/arcEnabledServers/UpdateManagement). Please update your references.
