@@ -22,6 +22,7 @@ main:
       - name: Azure Stack HCI
         sub:
           - name: Deployment
+            ref: hybrid/deployment
             sub:
               - name: 'Cluster'
                 ref: cluster
@@ -50,7 +51,7 @@ main:
               - name: Security
                 ref: hybrid/governance/Security 
           - name: Planning
-            ref: hybrid/Azure_Stack_HCI_Planning
+            ref: hybrid/planning/Azure_Stack_HCI_Planning
           - name: Scenarios
             ref: hybrid/scenario
             sub:
@@ -65,7 +66,7 @@ main:
               - name: Migration
                 ref: hybrid/scenario/migration/migration
           - name: tools
-            ref: hybrid/tools
+            ref: hybrid/tools/tools
   # - name: Migration and Management
   #   ref: "migrationAndManagement"
   - name: Specialized Workloads
