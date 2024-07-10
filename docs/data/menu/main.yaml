@@ -25,7 +25,7 @@ main:
             ref: hybrid/deployment
             sub:
               - name: 'Cluster'
-                ref: cluster
+                ref: hybrid/cluster
                 sub:
                   - name: 'Campus Cluster'
                     ref: 'hybrid/cluster/Campus_Cluster_build'
