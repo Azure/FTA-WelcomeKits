@@ -65,8 +65,8 @@ main:
                 ref: hybrid/scenario/dataservices/DataServices_integration
               - name: Migration
                 ref: hybrid/scenario/migration/migration
-          - name: tools
-            ref: hybrid/tools/tools
+          # - name: tools
+          #   ref: hybrid/tools/tools
   # - name: Migration and Management
   #   ref: "migrationAndManagement"
   - name: Specialized Workloads
