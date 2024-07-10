@@ -37,6 +37,7 @@ main:
               - name: SDN
                 ref: hybrid/Azure_Stack_HCI_SDN_deployment_guide
           - name: Governance
+            ref: hybrid/governance
             sub: 
               - name: Cluster Management
                 ref: hybrid/governance/ClusterManagement
