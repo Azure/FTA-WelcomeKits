@@ -17,7 +17,7 @@ Regarding cost, consider that while it is free to install the Arc agent and conn
 
 To help move this phase along, we offer the following guidance:
 
-1. **Specific Scenarios**: if there is a specific reason you are deploying Arc, such as [ESUs](./ESU.md) or [Update Management](./UpdateManagement.md), focus on deploying the agents and implementing that feature. You can always circle back on enabling or configuring additional features later.
+1. **Specific Scenarios**: if there is a specific reason you are deploying Arc, such as [ESUs](./ESU) or [Update Management](./UpdateManagement), focus on deploying the agents and implementing that feature. You can always circle back on enabling or configuring additional features later.
 1. **Feature Evaluations**: if you are thinking about implementing Arc, or are doing it already for a specific reason as above, but also interested in other features available to you, we recommend that you start your evaluation with the [Jumpstart Arcbox project](https://azurearcjumpstart.io/azure_jumpstart_arcbox/). This project enables you to quickly test and evaluate many features in an Azure-based test environment, without worrying about impacting production. If your Azure environment is relatively locked down by Azure Policy or limited RBAC roles, you might consider this testing for a sandbox subscription or Visual Studio Subscription.
 
 ## How do I deploy Azure Arc?
@@ -49,5 +49,5 @@ See [Arc agent overview](https://learn.microsoft.com/en-us/azure/azure-arc/serve
 
 ## Next Steps
 
-- [Extended Security Updates](./ESU.md)
-- [Update Management](./UpdateManagement.md)
+- [Extended Security Updates](./ESU)
+- [Update Management](./UpdateManagement)

@@ -6,7 +6,7 @@ geekdocAnchor: true
 ---
 
 
-[Home](../readme.md)  
+[Home](../readme)  
 [High-level architectural components for Azure VMware Solution](#high-level-architectural-components-for-azure-vmware-solution)  
 [Network \& Connectivity architecture patterns](#network--connectivity-architecture-patterns)
 

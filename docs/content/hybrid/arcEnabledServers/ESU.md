@@ -15,6 +15,6 @@ The ESU subscription approach through Arc is a simple pay-as-you-go cost once en
 
 ## Enabling ESU subscriptions with Arc
 
-The steps required for enabling ESU subscriptions with Arc are different, depending on whether you are licensing for Windows or SQL, but both start with the deployment of the Arc agent as discussed in the [Overview](./Overview.md) article.
+The steps required for enabling ESU subscriptions with Arc are different, depending on whether you are licensing for Windows or SQL, but both start with the deployment of the Arc agent as discussed in the [Overview](./Overview) article.
 
 For ESUs-only Arc deployment, there is [a shorter list of endpoints required through your firewall](https://learn.microsoft.com/azure/azure-arc/network-requirements-consolidated?tabs=azure-cloud#subset-of-endpoints-for-esu-only).

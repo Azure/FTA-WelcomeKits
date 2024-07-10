@@ -21,28 +21,28 @@ This Welcome Kit is structured into the following categories (or phases):
 
 ## Architecture & Design
 
-In these sections ([**design**](architectureAndDesign/design.md) and [**architecture**](architectureAndDesign/architecture.md)) we will explain the core architectural concepts for Azure VMware Solution deployments. It addresses the core concepts for Azure VMware Solution Software Defined Data Centers (SDDC) and the various services in Azure that are critical to understand Azure VMware Solution.
+In these sections ([**design**](architectureAndDesign/design) and [**architecture**](architectureAndDesign/architecture)) we will explain the core architectural concepts for Azure VMware Solution deployments. It addresses the core concepts for Azure VMware Solution Software Defined Data Centers (SDDC) and the various services in Azure that are critical to understand Azure VMware Solution.
 
 ## Plan
 
-In this [section](plan/plan.md) we will explain the fundamental concepts that are relevant to all planning session when considering an Azure VMware Solution [deployment](deploy/deploy.md)
+In this [section](plan/plan) we will explain the fundamental concepts that are relevant to all planning session when considering an Azure VMware Solution [deployment](deploy/deploy)
 
 ## Prepare  
 
-In this [section](prepare/prepare.md) we will explain the fundamental concepts that are relevant to to preparing to [deploy](deploy/deploy.md) an Azure VMware Solution implementation.
+In this [section](prepare/prepare) we will explain the fundamental concepts that are relevant to to preparing to [deploy](deploy/deploy) an Azure VMware Solution implementation.
 
 ## Deploy  
 
-In this [section](deploy/deploy.md) we will explain the options available to and highlight some key focus areas when you are ready to start deploying your Azure VMware Solution. Please do **NOT** skip here directly. [**Design**](architectureAndDesign/design.md), [**Architecture**](architectureAndDesign/architecture.md), [**Plan**](plan/plan.md) and [**Prepare**](prepare/prepare.md) are key aspects to ensure success.
+In this [section](deploy/deploy) we will explain the options available to and highlight some key focus areas when you are ready to start deploying your Azure VMware Solution. Please do **NOT** skip here directly. [**Design**](architectureAndDesign/design), [**Architecture**](architectureAndDesign/architecture), [**Plan**](plan/plan) and [**Prepare**](prepare/prepare) are key aspects to ensure success.
 
 ## Migrate  
 
-In this [section](migrate/migrate.md) we will explain the concepts related to the assessment of your Azure VMware Solution environment and we will explain different migration tools available to you.
+In this [section](migrate/migrate) we will explain the concepts related to the assessment of your Azure VMware Solution environment and we will explain different migration tools available to you.
 
 ## Govern  
 
-In this [section](govern/govern.md) we will cover key aspects that should be included in all areas of your deployment, these include Governance, Business Continuity and Disaster Recovery.
+In this [section](govern/govern) we will cover key aspects that should be included in all areas of your deployment, these include Governance, Business Continuity and Disaster Recovery.
 
 ## Secure  
 
-In this [section](secure/secure.md) we will cover key aspects that should be included in all _**security related**_ areas of your deployment, these include security considerations and baselines that are applicable to Azure VMware Solution.
+In this [section](secure/secure) we will cover key aspects that should be included in all _**security related**_ areas of your deployment, these include security considerations and baselines that are applicable to Azure VMware Solution.

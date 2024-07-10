@@ -63,4 +63,4 @@ Here is the list of manual steps:
 Lucky you!...  
 ...there is a video tutorial [Azure Stack HCI - Hybrid Series - Azure Virtual Desktop (AVD)](https://www.youtube.com/watch?v=pXI576Idx-c&list=PLDk1IPeq9PPeVwlvJZgo4n8Mw9Qj5gW0L&pp=gAQBiAQB) on how to do it.  
 ![Youtube playlist AVD on HCI](./../images/ytplaylist.png)  
-...and the PowerShell scripts being used are parked here: [How To Deploy AVD On AzStack HCI](https://github.com/bfrankMS/AzStackHCI/blob/main/AVD/readme.md)
+...and the PowerShell scripts being used are parked here: [How To Deploy AVD On AzStack HCI](https://github.com/bfrankMS/AzStackHCI/blob/main/AVD/readme)
