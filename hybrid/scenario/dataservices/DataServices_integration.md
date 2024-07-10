@@ -1,1 +1,1 @@
-The page you are looking for has been moved to [https://aka.ms/FTA-WelcomeKits/hybrid/scenario/dataservices/DataServices_integration](https://aka.ms/FTA-WelcomeKits_Migration/hybrid/scenario/dataservices/DataServices_integration). Please update your references.
+The page you are looking for has been moved to [https://mbrat2005.github.io/FTA-WelcomeKits/hybrid/scenario/dataservices/DataServices_integration](https://mbrat2005.github.io/FTA-WelcomeKits/hybrid/scenario/dataservices/DataServices_integration). Please update your references.

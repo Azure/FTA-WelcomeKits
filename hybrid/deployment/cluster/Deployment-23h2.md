@@ -1,1 +1,1 @@
-The page you are looking for has been moved to [https://aka.ms/FTA-WelcomeKits/hybrid/deployment/cluster/Deployment-23h2](https://aka.ms/FTA-WelcomeKits_Migration/hybrid/deployment/cluster/Deployment-23h2). Please update your references.
+The page you are looking for has been moved to [https://mbrat2005.github.io/FTA-WelcomeKits/hybrid/deployment/cluster/Deployment-23h2](https://mbrat2005.github.io/FTA-WelcomeKits/hybrid/deployment/cluster/Deployment-23h2). Please update your references.

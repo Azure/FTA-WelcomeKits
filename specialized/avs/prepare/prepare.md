@@ -1,1 +1,1 @@
-The page you are looking for has been moved to [https://aka.ms/FTA-WelcomeKits/specialized/avs/prepare/prepare](https://aka.ms/FTA-WelcomeKits_Migration/specialized/avs/prepare/prepare). Please update your references.
+The page you are looking for has been moved to [https://mbrat2005.github.io/FTA-WelcomeKits/specialized/avs/prepare/prepare](https://mbrat2005.github.io/FTA-WelcomeKits/specialized/avs/prepare/prepare). Please update your references.

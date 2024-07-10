@@ -1,1 +1,1 @@
-The page you are looking for has been moved to [https://aka.ms/FTA-WelcomeKits/hybrid/arcEnabledServers/Overview](https://aka.ms/FTA-WelcomeKits_Migration/hybrid/arcEnabledServers/Overview). Please update your references.
+The page you are looking for has been moved to [https://mbrat2005.github.io/FTA-WelcomeKits/hybrid/arcEnabledServers/Overview](https://mbrat2005.github.io/FTA-WelcomeKits/hybrid/arcEnabledServers/Overview). Please update your references.

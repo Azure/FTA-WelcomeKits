@@ -1,1 +1,1 @@
-The page you are looking for has been moved to [https://aka.ms/FTA-WelcomeKits/hybrid/deployment/cluster/Standard_Cluster_build](https://aka.ms/FTA-WelcomeKits_Migration/hybrid/deployment/cluster/Standard_Cluster_build). Please update your references.
+The page you are looking for has been moved to [https://mbrat2005.github.io/FTA-WelcomeKits/hybrid/deployment/cluster/Standard_Cluster_build](https://mbrat2005.github.io/FTA-WelcomeKits/hybrid/deployment/cluster/Standard_Cluster_build). Please update your references.
