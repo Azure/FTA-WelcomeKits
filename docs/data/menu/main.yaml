@@ -69,7 +69,7 @@ main:
   - name: Specialized Workloads
     ref: "specialized"
     sub:
-    - name: avs
+    - name: Azure VMware Services
       ref: specialized/avs
       sub:
         - name: Architecture and Design
@@ -92,6 +92,3 @@ main:
           ref: specialized/avs/secure
     - name: SAP
       ref: specialized/sap
-      sub:
-        - name: SAP on Azure Starter Guide
-          ref: 'specialized/sap/SAP on Azure Starter Guide for HANA based workloads v2.pdf'
