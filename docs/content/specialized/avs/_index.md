@@ -3,6 +3,7 @@ title: FastTrack for Azure - Azure VMware Solution - Welcome Kit
 geekdocNav: true
 geekdocAlign: left
 geekdocAnchor: true
+geekdocCollapseSection: true
 ---
 
 

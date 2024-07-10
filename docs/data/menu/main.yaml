@@ -52,6 +52,7 @@ main:
           - name: Planning
             ref: hybrid/Azure_Stack_HCI_Planning
           - name: Scenarios
+            ref: hybrid/scenario
             sub:
               - name: AKS Workloads
                 ref: hybrid/scenario/aksworkload/Azure_Stack_HCI_AKS_Fundamentals_FAQ
@@ -74,6 +75,7 @@ main:
       ref: specialized/avs
       sub:
         - name: Architecture and Design
+          ref: specialized/avs/architectureAndDesign
           sub: 
             - name: Architecture
               ref: specialized/avs/architectureAndDesign/architecture
