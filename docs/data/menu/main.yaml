@@ -4,6 +4,11 @@ main:
     ref: "cloudNative"
   - name: Foundational Tech
     ref: "foundationalTech"
+    sub:
+      - name: Management
+        ref: management
+      - name: Migration
+        ref: migration
   - name: Hybrid
     ref: "hybrid"
     sub:
@@ -14,7 +19,77 @@ main:
             ref: hybrid/arcEnabledServers/ESU
           - name: Update Management
             ref: hybrid/arcEnabledServers/UpdateManagement
+      - name: Deployment
+        ref: hybrid/deployment
+        sub:
+          - name: 'Cluster'
+            ref: cluster
+            sub:
+              - name: 'Campus Cluster'
+                ref: 'hybrid/cluster/Campus_Cluster_build'
+              - name: '23H2 Deployment'
+                ref: 'hybrid/cluster/Deployment-23H2'
+              - name: 'Standard Cluster Build'
+                ref: 'hybrid/cluster/Standard_Cluster_Build'
+              - name: 'Stretch Cluster Build'
+                ref: 'hybrid/cluster/Stretch_Cluster_build'
+          - name: SDN
+            ref: hybrid/Azure_Stack_HCI_SDN_deployment_guide
+      - name: Governance
+        ref: hybrid/governance
+        sub: 
+          - name: Cluster Management
+            ref: hybrid/governance/ClusterManagement
+          - name: Cluster Monitoring
+            ref: hybrid/governance/ClusterMonitoring
+          - name: Health Checks
+            ref: hybrid/governance/HealthChecks
+          - name: Performance
+            ref: hybrid/governance/Performance
+          - name: Security
+            ref: hybrid/governance/Security 
+      - name: Planning
+        ref: hybrid/Azure_Stack_HCI_Planning
+      - name: Scenarios
+        sub:
+          - name: AKS Workloads
+            ref: hybrid/scenario/aksworkload/Azure_Stack_HCI_AKS_Fundamentals_FAQ
+          - name: Azure Virtual Desktop
+            ref: hybrid/scenario/avd/Azure_Stack_HCI_AVD_deployment_guide
+          - name: BCDR
+            ref: hybrid/scenario/Azure_Stack_HCI_AVD_deployment_guide
+          - name: Data Services
+            ref: hybrid/scenario/dataservices/DataServices_integration
+          - name: Migration
+            ref: hybrid/scenario/migration
+      - name: tools
+        ref: hybrid/tools
   - name: Migration and Management
     ref: "migrationAndManagement"
   - name: Specialized Workloads
     ref: "specialized"
+    sub:
+    - name: avs
+      ref: specialized/avs
+      sub:
+        - name: Architecture and Design
+          ref: specialized/avs/architectureAndDesign
+        - name: Deployment
+          ref: specialized/avs/deploy
+        - name: Governance
+          ref: specialized/avs/govern
+        - name: Media
+          ref: specialized/avs/media
+        - name: Migration
+          ref: specialized/avs/migrate
+        - name: Planning
+          ref: specialized/avs/plan
+        - name: Preparation
+          ref: specialized/avs/prepare
+        - name: Security
+          ref: specialized/avs/secure
+    - name: sap
+      ref: specialized/sap
+      sub:
+        - name: SAP on Azure Starter Guide
+          ref: specialized/sap/SAP on Azure Starter Guide for HANA based workloads v2.pdf
