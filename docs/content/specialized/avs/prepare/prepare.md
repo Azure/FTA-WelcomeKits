@@ -1,3 +1,10 @@
+---
+title: Prepare
+geekdocNav: true
+geekdocAlign: left
+geekdocAnchor: true
+---
+
 # Prepare
 
 [Home](../readme.md)  

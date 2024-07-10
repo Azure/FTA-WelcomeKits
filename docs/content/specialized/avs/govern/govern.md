@@ -1,3 +1,10 @@
+---
+title: Govern AVS
+geekdocNav: true
+geekdocAlign: left
+geekdocAnchor: true
+---
+
 # Govern AVS
 
 [Home](../readme.md)  

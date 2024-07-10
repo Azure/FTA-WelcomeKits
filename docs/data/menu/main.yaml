@@ -78,8 +78,6 @@ main:
           ref: specialized/avs/deploy
         - name: Governance
           ref: specialized/avs/govern
-        - name: Media
-          ref: specialized/avs/media
         - name: Migration
           ref: specialized/avs/migrate
         - name: Planning

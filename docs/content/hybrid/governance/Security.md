@@ -1,3 +1,10 @@
+---
+title: Welcome Kit - Azure Stack HCI - Management - Draft
+geekdocNav: true
+geekdocAlign: left
+geekdocAnchor: true
+---
+
 [securitybaseline]:https://learn.microsoft.com/en-us/azure-stack/hci/concepts/secure-baseline
 [securitybaselinetemplates]:https://github.com/Azure-Samples/azure-stack-edge-deploy-vms/tree/master/Templates
 [securitybaselinesettings]:https://learn.microsoft.com/en-us/azure-stack/hci/concepts/secure-baseline#configure-security-during-deployment

@@ -1,3 +1,10 @@
+---
+title: VM Migration Guide for Azure Stack HCI
+geekdocNav: true
+geekdocAlign: left
+geekdocAnchor: true
+---
+
 # VM Migration Guide for Azure Stack HCI
 
 This guide walks you through options and approaches for migrating VMs from your source environment to your new Azure Stack HCI hardware. Depending on the source hypervisor and downtime considerations, there are several options that fall into two primariy categories:

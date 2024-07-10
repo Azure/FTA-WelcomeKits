@@ -1,3 +1,10 @@
+---
+title: Secure AVS
+geekdocNav: true
+geekdocAlign: left
+geekdocAnchor: true
+---
+
 # Secure AVS
 
 Security is a paramount concern when migrating to Azure VMware Solution. Ensuring the integrity, confidentiality, and availability of your data and services is crucial. Azure VMware Solution provides robust security features that align with industry standards, including network security, data encryption, access control, and more. However, understanding these features and correctly implementing them is key to maintaining a secure environment.

@@ -1,3 +1,10 @@
+---
+title: Welcome Kit - Azure Stack HCI - Management - Draft
+geekdocNav: true
+geekdocAlign: left
+geekdocAnchor: true
+---
+
 [wacfirewallruleshost]:https://learn.microsoft.com/en-us/azure-stack/hci/concepts/firewall-requirements#windows-admin-center
 [wacfirewallrulesinternet]:https://learn.microsoft.com/en-us/windows-server/manage/windows-admin-center/deploy/network-requirements#gateway-urls
 [wacfirewallrulesbrowser]:https://learn.microsoft.com/en-us/windows-server/manage/windows-admin-center/deploy/network-requirements#browser-urls

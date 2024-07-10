@@ -1,3 +1,10 @@
+---
+title: Design
+geekdocNav: true
+geekdocAlign: left
+geekdocAnchor: true
+---
+
 # Design
 
 [Home](../readme.md)  

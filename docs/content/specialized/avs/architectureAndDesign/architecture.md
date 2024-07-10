@@ -1,3 +1,10 @@
+---
+title: Welcome Kit - Azure VMware Solution - Architecture
+geekdocNav: true
+geekdocAlign: left
+geekdocAnchor: true
+---
+
 # Welcome Kit - Azure VMware Solution - Architecture
 
 [Home](../readme.md)  

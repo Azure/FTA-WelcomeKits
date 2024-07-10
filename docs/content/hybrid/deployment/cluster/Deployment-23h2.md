@@ -1,3 +1,10 @@
+---
+title: Welcome Kit - Azure Stack HCI - Deployment
+geekdocNav: true
+geekdocAlign: left
+geekdocAnchor: true
+---
+
 [clouddeployment]:https://learn.microsoft.com/en-us/azure-stack/hci/deploy/deployment-introduction
 [deploy22h2]:https://learn.microsoft.com/en-us/azure-stack/hci/deploy/create-cluster?tabs=use-network-atc-to-deploy-and-manage-networking-recommended
 [stretchcluster22h2]:https://learn.microsoft.com/en-us/azure-stack/hci/deploy/create-cluster-powershell#step-5-set-up-sites-stretched-cluster

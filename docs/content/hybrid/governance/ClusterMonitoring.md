@@ -1,3 +1,10 @@
+---
+title: Welcome Kit - Azure Stack HCI - Monitoring - Draft
+geekdocNav: true
+geekdocAlign: left
+geekdocAnchor: true
+---
+
 [hciinsightssingle]:https://learn.microsoft.com/en-us/azure-stack/hci/manage/monitor-hci-single?tabs=22h2-and-later
 [hciinsightsmultiple]:https://learn.microsoft.com/en-us/azure-stack/hci/manage/monitor-hci-multi
 [arcenabledservers]:https://learn.microsoft.com/en-us/azure/azure-arc/servers/overview

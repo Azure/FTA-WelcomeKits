@@ -1,3 +1,10 @@
+---
+title: Plan
+geekdocNav: true
+geekdocAlign: left
+geekdocAnchor: true
+---
+
 # Plan
 
 [Home](../readme.md)  

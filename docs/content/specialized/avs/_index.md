@@ -1,3 +1,10 @@
+---
+title: FastTrack for Azure - Azure VMware Solution - Welcome Kit
+geekdocNav: true
+geekdocAlign: left
+geekdocAnchor: true
+---
+
 # FastTrack for Azure - Azure VMware Solution - Welcome Kit
 
 Welcome to the ultimate guide for Azure VMware Solution enthusiasts! Whether you are embarking on setting up a brand new software defined data center or expanding an existing one, you have arrived at the right place. Understanding the complexity and the need for a reliable, flexible infrastructure, we have curated an extensive collection of resources specifically designed for Azure VMware Solution.

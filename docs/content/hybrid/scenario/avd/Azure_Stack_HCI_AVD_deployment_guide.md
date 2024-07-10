@@ -1,3 +1,10 @@
+---
+title: AVD Deployment Guides On Azure Stack HCI
+geekdocNav: true
+geekdocAlign: left
+geekdocAnchor: true
+---
+
 # AVD Deployment Guides On Azure Stack HCI  
 This is a step-by-step guide on how to deploy and configure Azure Virtual Desktop (AVD) on Azure Stack HCI, ensuring an optimized user experience.  
 

@@ -1,3 +1,10 @@
+---
+title: Welcome Kit - Azure VMware Solution - Assess and Migrate
+geekdocNav: true
+geekdocAlign: left
+geekdocAnchor: true
+---
+
 # Welcome Kit - Azure VMware Solution - Assess and Migrate
 
 [Home](../readme.md)  

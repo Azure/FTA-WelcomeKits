@@ -1,4 +1,11 @@
-**Extended Security Updates (ESU) for Windows Server**
+---
+title: Extended Security Updates (ESU) for Windows Server
+geekdocNav: true
+geekdocAlign: left
+geekdocAnchor: true
+---
+
+# Extended Security Updates (ESU) for Windows Server
 
 Extended Security Updates (ESU) for Windows Server include security updates and bulletins rated critical and important. Before using ESU, you should read Extended Security Updates for Windows Server Overview to understand what ESUs are, how long they're available for, and what your options are.
 

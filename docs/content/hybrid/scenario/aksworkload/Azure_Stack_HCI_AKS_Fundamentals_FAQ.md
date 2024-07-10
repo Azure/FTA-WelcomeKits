@@ -1,3 +1,10 @@
+---
+title: Welcome Kit – Azure Stack HCI – AKS
+geekdocNav: true
+geekdocAlign: left
+geekdocAnchor: true
+---
+
 # Welcome Kit – Azure Stack HCI – AKS
 
 Welcome to the "Azure Stack HCI – AKS Fundamentals FAQ Welcome Kit." This comprehensive guide is designed to provide you with essential insights into the foundational aspects of Kubernetes, Azure Kubernetes Service (AKS), Resource Bridge, Azure Arc, and the unique integration of AKS with Azure Stack HCI. 

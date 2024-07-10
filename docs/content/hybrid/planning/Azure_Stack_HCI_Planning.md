@@ -1,3 +1,10 @@
+---
+title: Welcome Kit - Azure Stack HCI - Planning - Draft
+geekdocNav: true
+geekdocAlign: left
+geekdocAnchor: true
+---
+
 [catalog]:https://azurestackhcisolutions.azure.microsoft.com/#/catalog
 [switchrequirements]:https://learn.microsoft.com/en-us/azure-stack/hci/concepts/physical-network-requirements?tabs=overview%2C22H2reqs#network-switch-requirements
 [requiredrules]:https://learn.microsoft.com/en-us/azure-stack/hci/concepts/firewall-requirements#required-firewall-urls

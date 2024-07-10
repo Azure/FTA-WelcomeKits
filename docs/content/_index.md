@@ -1,3 +1,10 @@
+---
+title: FastTrack for Azure Welcome Kits
+geekdocNav: true
+geekdocAlign: left
+geekdocAnchor: true
+---
+
 # FastTrack for Azure Welcome Kits
 
 This repo contains Welcome Kit content developed by FastTrack for Azure as a way to prepare our
