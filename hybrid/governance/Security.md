@@ -1,1 +1,1 @@
-The page you are looking for has been moved to (this location)[https://mbrat2005.github.io/FTA-WelcomeKits//hybrid/governance/Security]
+The page you are looking for has been moved to [https://aka.ms/FTA-WelcomeKit//hybrid/governance/Security](https://aka.ms/FTA-WelcomeKit_Migration//hybrid/governance/Security). Please update your references.

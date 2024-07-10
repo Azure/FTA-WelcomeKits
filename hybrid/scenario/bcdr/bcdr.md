@@ -1,1 +1,1 @@
-The page you are looking for has been moved to (this location)[https://mbrat2005.github.io/FTA-WelcomeKits//hybrid/scenario/bcdr/bcdr]
+The page you are looking for has been moved to [https://aka.ms/FTA-WelcomeKit//hybrid/scenario/bcdr/bcdr](https://aka.ms/FTA-WelcomeKit_Migration//hybrid/scenario/bcdr/bcdr). Please update your references.

@@ -1,1 +1,1 @@
-The page you are looking for has been moved to (this location)[https://mbrat2005.github.io/FTA-WelcomeKits//specialized/avs/deploy/deploy]
+The page you are looking for has been moved to [https://aka.ms/FTA-WelcomeKit//specialized/avs/deploy/deploy](https://aka.ms/FTA-WelcomeKit_Migration//specialized/avs/deploy/deploy). Please update your references.

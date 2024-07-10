@@ -1,1 +1,1 @@
-The page you are looking for has been moved to (this location)[https://mbrat2005.github.io/FTA-WelcomeKits//hybrid/governance/Healthchecks]
+The page you are looking for has been moved to [https://aka.ms/FTA-WelcomeKit//hybrid/governance/Healthchecks](https://aka.ms/FTA-WelcomeKit_Migration//hybrid/governance/Healthchecks). Please update your references.

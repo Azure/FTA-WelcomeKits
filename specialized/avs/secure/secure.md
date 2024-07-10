@@ -1,1 +1,1 @@
-The page you are looking for has been moved to (this location)[https://mbrat2005.github.io/FTA-WelcomeKits//specialized/avs/secure/secure]
+The page you are looking for has been moved to [https://aka.ms/FTA-WelcomeKit//specialized/avs/secure/secure](https://aka.ms/FTA-WelcomeKit_Migration//specialized/avs/secure/secure). Please update your references.

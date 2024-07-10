@@ -1,1 +1,1 @@
-The page you are looking for has been moved to (this location)[https://mbrat2005.github.io/FTA-WelcomeKits//foundationalTech/migration/readme]
+The page you are looking for has been moved to [https://aka.ms/FTA-WelcomeKit//foundationalTech/migration/readme](https://aka.ms/FTA-WelcomeKit_Migration//foundationalTech/migration/readme). Please update your references.

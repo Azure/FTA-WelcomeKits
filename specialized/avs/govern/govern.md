@@ -1,1 +1,1 @@
-The page you are looking for has been moved to (this location)[https://mbrat2005.github.io/FTA-WelcomeKits//specialized/avs/govern/govern]
+The page you are looking for has been moved to [https://aka.ms/FTA-WelcomeKit//specialized/avs/govern/govern](https://aka.ms/FTA-WelcomeKit_Migration//specialized/avs/govern/govern). Please update your references.
