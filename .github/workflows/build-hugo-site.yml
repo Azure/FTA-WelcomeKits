@@ -5,7 +5,7 @@ on:
   # Runs on pushes targeting the default branch and everyday at 1 am to update dynamic info
   push:
     branches:
-      - geekdoc-test
+      - geekdoc-migration
     paths:
       - 'docs/**'
   schedule:
