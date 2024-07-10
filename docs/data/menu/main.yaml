@@ -88,7 +88,7 @@ main:
           ref: specialized/avs/prepare
         - name: Security
           ref: specialized/avs/secure
-    - name: sap
+    - name: SAP
       ref: specialized/sap
       sub:
         - name: SAP on Azure Starter Guide
