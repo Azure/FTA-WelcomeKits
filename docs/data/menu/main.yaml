@@ -1,14 +1,14 @@
 ---
 main:
-  - name: Cloud Native
-    ref: "cloudNative"
-  - name: Foundational Tech
-    ref: "foundationalTech"
-    sub:
-      - name: Management
-        ref: foundationalTech/management
-      - name: Migration
-        ref: foundationalTech/migration
+  # - name: Cloud Native
+  #   ref: "cloudNative"
+  # - name: Foundational Tech
+  #   ref: "foundationalTech"
+  #   sub:
+  #     - name: Management
+  #       ref: foundationalTech/management
+  #     - name: Migration
+  #       ref: foundationalTech/migration
   - name: Hybrid
     ref: "hybrid"
     sub:
@@ -66,8 +66,8 @@ main:
                 ref: hybrid/scenario/migration/migration
           - name: tools
             ref: hybrid/tools
-  - name: Migration and Management
-    ref: "migrationAndManagement"
+  # - name: Migration and Management
+  #   ref: "migrationAndManagement"
   - name: Specialized Workloads
     ref: "specialized"
     sub:
@@ -82,16 +82,16 @@ main:
             - name: Design
               ref: specialized/avs/architectureAndDesign/design
         - name: Deployment
-          ref: specialized/avs/deploy
+          ref: specialized/avs/deploy/deploy
         - name: Governance
-          ref: specialized/avs/govern
+          ref: specialized/avs/govern/govern
         - name: Migration
-          ref: specialized/avs/migrate
+          ref: specialized/avs/migrate/migrate
         - name: Planning
-          ref: specialized/avs/plan
+          ref: specialized/avs/plan/plan
         - name: Preparation
-          ref: specialized/avs/prepare
+          ref: specialized/avs/prepare/prepare
         - name: Security
-          ref: specialized/avs/secure
+          ref: specialized/avs/secure/secure
     - name: SAP
       ref: specialized/sap

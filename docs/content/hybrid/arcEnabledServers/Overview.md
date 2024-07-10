@@ -3,6 +3,7 @@ title: Arc-enabled Servers Overview
 geekdocNav: true
 geekdocAlign: left
 geekdocAnchor: true
+geekdocCollapseSection: true
 ---
 
 
