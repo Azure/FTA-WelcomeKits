@@ -56,7 +56,6 @@ geekdocAnchor: true
 [netatcoverrides]:https://learn.microsoft.com/en-us/azure-stack/hci/manage/manage-network-atc?tabs=21H2#update-or-override-network-settings
 [livemigrateqos]:https://learn.microsoft.com/en-us/powershell/module/smbshare/set-smbbandwidthlimit?view=windowsserver2022-ps#example-2-add-an-smb-limit-for-live-migration
 
-# Welcome Kit - Azure Stack HCI - Planning - Draft
 
 
 Welcome to the "Azure Stack HCI - Planning Welcome Kit." This comprehensive guide is designed to provide you with essential insights into the areas of focus and consideration when planning and designing your Azure Stack HCI Deployment. As part of your preparation before engaging with Microsoft engineers, this resource aims to demystify these technologies, offering clear explanations and answers to frequently asked questions. Whether you're new to these concepts or seeking to deepen your understanding, this Welcome Kit is your stepping stone to navigating the world of modern cloud-native solutions. 

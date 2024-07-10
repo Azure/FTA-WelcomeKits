@@ -5,7 +5,6 @@ geekdocAlign: left
 geekdocAnchor: true
 ---
 
-# Welcome Kit - Azure VMware Solution - Architecture
 
 [Home](../readme.md)  
 [High-level architectural components for Azure VMware Solution](#high-level-architectural-components-for-azure-vmware-solution)  

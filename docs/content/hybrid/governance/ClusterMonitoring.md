@@ -50,7 +50,6 @@ geekdocAnchor: true
 [getvirtaldisk]:https://learn.microsoft.com/en-us/powershell/module/storage/get-virtualdisk?view=windowsserver2022-ps
 
 
-# Welcome Kit - Azure Stack HCI - Monitoring - Draft
 
 
 Welcome to the "Azure Stack HCI - Monitoring Welcome Kit." This comprehensive guide is designed to provide you with essential insights into the areas of focus and consideration when planning and designing your Azure Stack HCI Monitoring. As part of your preparation before engaging with Microsoft engineers, this resource aims to demystify these technologies, offering clear explanations and answers to frequently asked questions. Whether you're new to these concepts or seeking to deepen your understanding, this Welcome Kit is your stepping stone to navigating the world of modern cloud-native solutions. 

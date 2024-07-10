@@ -5,7 +5,6 @@ geekdocAlign: left
 geekdocAnchor: true
 ---
 
-# Welcome Kit - Azure VMware Solution - Assess and Migrate
 
 [Home](../readme.md)  
 [Assess](#assess)  

@@ -5,7 +5,6 @@ geekdocAlign: left
 geekdocAnchor: true
 ---
 
-# Govern AVS
 
 [Home](../readme.md)  
 

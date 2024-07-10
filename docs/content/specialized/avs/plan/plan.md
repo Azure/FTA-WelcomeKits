@@ -5,7 +5,6 @@ geekdocAlign: left
 geekdocAnchor: true
 ---
 
-# Plan
 
 [Home](../readme.md)  
 

@@ -5,7 +5,6 @@ geekdocAlign: left
 geekdocAnchor: true
 ---
 
-# FastTrack for Azure Welcome Kits
 
 This repo contains Welcome Kit content developed by FastTrack for Azure as a way to prepare our
 customers to engage with our engineers. Welcome Kits are meant to give customers a starting place

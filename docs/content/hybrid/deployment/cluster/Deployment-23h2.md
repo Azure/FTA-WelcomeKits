@@ -31,7 +31,6 @@ geekdocAnchor: true
 [assignresourcepermissions]:https://learn.microsoft.com/en-us/azure-stack/hci/deploy/deployment-azure-resource-manager-template#step-2-assign-resource-permissions
 [deploymenttroubleshooting]:https://techcommunity.microsoft.com/t5/fasttrack-for-azure/troubleshooting-azure-stack-hci-23h2-preview-deployments/ba-p/4036222
 
-# Welcome Kit - Azure Stack HCI - Deployment
 
 Welcome to the "Azure Stack HCI - Deployment Welcome Kit." With the release of Azure Stack HCI 23H2 the deployment method has now changed.  With all 23H2 deployments the [cloud deployment][clouddeployment] must be used.  Currently at GA 23H2 does not support the deployment of stretch clustering, meaning until the GA of stretch clustering with Azure Stack HCI 23H2, then 22H2 should be used.  
 

@@ -5,7 +5,6 @@ geekdocAlign: left
 geekdocAnchor: true
 ---
 
-# Prepare
 
 [Home](../readme.md)  
 [Proof Of Concpet Tutorials](#tutorials)  

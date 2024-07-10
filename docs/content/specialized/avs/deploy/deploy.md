@@ -5,7 +5,6 @@ geekdocAlign: left
 geekdocAnchor: true
 ---
 
-# Deploy
 
 [Home](../readme.md)  
 

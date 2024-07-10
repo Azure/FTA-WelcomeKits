@@ -5,7 +5,6 @@ geekdocAlign: left
 geekdocAnchor: true
 ---
 
-# SAP on Azure Starter Guide for HANA based workloads
 
 **Disclaimer:** This document is not an official Microsoft publication. The official Microsoft positioning and guidance for SAP on Azure can be found exclusively on the Microsoft official website and documentation.
 

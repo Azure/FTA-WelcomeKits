@@ -5,7 +5,6 @@ geekdocAlign: left
 geekdocAnchor: true
 ---
 
-# SDN Deployment Guide for Azure Stack HCI
 
 This guide walks you through deciding when to use Software Defined Networking (SDN) as part of your Azure Stack HCI deployment, then describes the deployment and configuration process to get you started. 
 

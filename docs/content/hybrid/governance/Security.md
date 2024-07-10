@@ -26,7 +26,6 @@ geekdocAnchor: true
 [pim]:https://learn.microsoft.com/en-us/entra/id-governance/privileged-identity-management/pim-configure
 [credssp]:https://learn.microsoft.com/en-us/windows-server/manage/windows-admin-center/understand/faq#does-windows-admin-center-use-credssp-
 
-# Welcome Kit - Azure Stack HCI - Management - Draft
 
 
 Welcome to the "Azure Stack HCI - Security Welcome Kit." This comprehensive guide is designed to provide you with essential insights into the areas of focus and consideration when managing your Azure Stack HCI Security. As part of your preparation before engaging with Microsoft engineers, this resource aims to demystify these technologies, offering clear explanations and answers to frequently asked questions. Whether you're new to these concepts or seeking to deepen your understanding, this Welcome Kit is your stepping stone to navigating the world of modern cloud-native solutions. 
