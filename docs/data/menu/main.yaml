@@ -6,9 +6,9 @@ main:
     ref: "foundationalTech"
     sub:
       - name: Management
-        ref: management
+        ref: foundationalTech/management
       - name: Migration
-        ref: migration
+        ref: foundationalTech/migration
   - name: Hybrid
     ref: "hybrid"
     sub:
