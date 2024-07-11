@@ -1,0 +1,98 @@
+---
+main:
+  # - name: Cloud Native
+  #   ref: "cloudNative"
+  # - name: Foundational Tech
+  #   ref: "foundationalTech"
+  #   sub:
+  #     - name: Management
+  #       ref: foundationalTech/management
+  #     - name: Migration
+  #       ref: foundationalTech/migration
+  - name: Hybrid
+    ref: "hybrid"
+    sub:
+      - name: Arc-enabled Servers
+        ref: hybrid/arcEnabledServers/Overview
+        sub: 
+          - name: Extended Support Updates
+            ref: hybrid/arcEnabledServers/ESU
+          - name: Update Management
+            ref: hybrid/arcEnabledServers/UpdateManagement
+      - name: Azure Stack HCI
+        sub:
+          - name: Deployment
+            ref: hybrid/deployment
+            sub:
+              - name: 'Cluster'
+                ref: hybrid/deployment/cluster
+                sub:
+                  # - name: 'Campus Cluster'
+                  #   ref: 'hybrid/deployment/cluster/Campus_Cluster_build'
+                  - name: '23H2 Deployment'
+                    ref: 'hybrid/deployment/cluster/Deployment-23H2'
+                  # - name: 'Standard Cluster Build'
+                  #   ref: 'hybrid/deployment/cluster/Standard_Cluster_Build'
+                  # - name: 'Stretch Cluster Build'
+                  #   ref: 'hybrid/deployment/cluster/Stretch_Cluster_build'
+              - name: SDN
+                ref: hybrid/deployment/sdn/Azure_Stack_HCI_SDN_deployment_guide
+          - name: Governance
+            ref: hybrid/governance
+            sub: 
+              - name: Cluster Management
+                ref: hybrid/governance/ClusterManagement
+              - name: Cluster Monitoring
+                ref: hybrid/governance/ClusterMonitoring
+              - name: Health Checks
+                ref: hybrid/governance/HealthChecks
+              - name: Performance
+                ref: hybrid/governance/Performance
+              - name: Security
+                ref: hybrid/governance/Security 
+          - name: Planning
+            ref: hybrid/planning/Azure_Stack_HCI_Planning
+          - name: Scenarios
+            ref: hybrid/scenario
+            sub:
+              - name: AKS Workloads
+                ref: hybrid/scenario/aksworkload/Azure_Stack_HCI_AKS_Fundamentals_FAQ
+              - name: Azure Virtual Desktop
+                ref: hybrid/scenario/avd/Azure_Stack_HCI_AVD_deployment_guide
+              - name: BCDR
+                ref: hybrid/scenario/bcdr/bcdr
+              - name: Data Services
+                ref: hybrid/scenario/dataservices/DataServices_integration
+              - name: Migration
+                ref: hybrid/scenario/migration/migration
+          # - name: tools
+          #   ref: hybrid/tools/tools
+  # - name: Migration and Management
+  #   ref: "migrationAndManagement"
+  - name: Specialized Workloads
+    ref: "specialized"
+    sub:
+    - name: Azure VMware Services
+      ref: specialized/avs
+      sub:
+        - name: Architecture and Design
+          ref: specialized/avs/architectureAndDesign
+          sub: 
+            - name: Architecture
+              ref: specialized/avs/architectureAndDesign/architecture
+            - name: Design
+              ref: specialized/avs/architectureAndDesign/design
+        - name: Deployment
+          ref: specialized/avs/deploy/deploy
+        - name: Governance
+          ref: specialized/avs/govern/govern
+        - name: Migration
+          ref: specialized/avs/migrate/migrate
+        - name: Planning
+          ref: specialized/avs/plan/plan
+        - name: Preparation
+          ref: specialized/avs/prepare/prepare
+        - name: Security
+          ref: specialized/avs/secure/secure
+    - name: SAP
+      ref: specialized/sap

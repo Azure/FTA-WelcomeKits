@@ -1,0 +1,4 @@
+---
+title: Scenarios
+geekdocCollapseSection: true
+---
