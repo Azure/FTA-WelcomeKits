@@ -1,5 +1,5 @@
 ---
-title: Welcome Kit - Azure VMware Solution - Architecture
+title: Architecture
 geekdocNav: true
 geekdocAlign: left
 geekdocAnchor: true
