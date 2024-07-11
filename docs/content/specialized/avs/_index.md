@@ -11,6 +11,8 @@ Welcome to the ultimate guide for Azure VMware Solution enthusiasts! Whether you
 
 This Welcome Kit is structured into the following categories (or phases):
 
+{{< toc-tree [sortBy="title"] >}}
+
 [Architecture \& Design](#architecture--design)  
 [Plan](#plan)  
 [Prepare](#prepare)  
