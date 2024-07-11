@@ -60,7 +60,7 @@ With Windows Admin Centre in the Azure Portal the relation ship between the Wind
 
 Once enabled this is accessed via the Azure Stack HCI blade within the Azure Portal, and will require additional authentication with a ADDS Account.
 
-![Windows Admin Centre in the Azure Portal](windows-admin-center-in-azure-hci-connect.png "Windows Admin Centre in the Azure Portal")
+![Windows Admin Centre in the Azure Portal](../../windows-admin-center-in-azure-hci-connect.png "Windows Admin Centre in the Azure Portal")
 
 Additionally when this is enabled, the nodes directly can be managed from the Azure Portal from the Arc for Servers blade for each nodes, and will require additional authentication with a ADDS Account.
 
