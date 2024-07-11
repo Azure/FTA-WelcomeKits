@@ -60,6 +60,8 @@ geekdocAnchor: true
 
 Welcome to the "Azure Stack HCI - Planning Welcome Kit." This comprehensive guide is designed to provide you with essential insights into the areas of focus and consideration when planning and designing your Azure Stack HCI Deployment. As part of your preparation before engaging with Microsoft engineers, this resource aims to demystify these technologies, offering clear explanations and answers to frequently asked questions. Whether you're new to these concepts or seeking to deepen your understanding, this Welcome Kit is your stepping stone to navigating the world of modern cloud-native solutions. 
 
+{{< toc (format=html) >}}
+
 ## Requirements
 
 As Azure Stack is a Hybrid Solution then this touches a number of areas which normal Azure Deployments don't and in turn touches areas which a traditional on-premises would not. In the following sections the requirements across both will be discussed.
