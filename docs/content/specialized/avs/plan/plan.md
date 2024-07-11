@@ -6,7 +6,7 @@ geekdocAnchor: true
 ---
 
 
-[Home](../readme)  
+[Home](..)  
 
 Welcome to the FastTrack for Azure - Azure VMware Solution Welcome Kit section on planning your Azure VMware Solution. This will cover the fundamental topics that all are applicable to all and any Azure VMware Solution [deployments](../deploy/deploy).
 

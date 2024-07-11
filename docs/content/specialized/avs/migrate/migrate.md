@@ -6,7 +6,7 @@ geekdocAnchor: true
 ---
 
 
-[Home](../readme)  
+[Home](..)  
 [Assess](#assess)  
 [Migrate](#migrate)
 
