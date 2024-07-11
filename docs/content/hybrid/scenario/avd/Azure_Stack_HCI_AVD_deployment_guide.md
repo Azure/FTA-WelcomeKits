@@ -28,7 +28,7 @@ Both have pros and cons and might (will) change in the future.
 
 ## Option 1: For Automated Deployment Of AVD On HCI Via Azure Portal (Azure Arc) Using Azure Arc VM management.
 ### 1st: You need to enlighten your Azure Portal -> Azure Arc for AVD.  
-![prerequisites for AVD on HCI met](./../images/enlightened.png)  
+![prerequisites for AVD on HCI met](../../images/enlightened.png)  
 For this checkbox to go green you need to:  
 - Set up *Arc VM management*
 - Have a Windows image available on the HCI cluster to create AVD desktop VMs from.  
@@ -40,7 +40,7 @@ Watch [Installing ...Azure Arc Resource Bridge on AzStack HCI using PowerShell (
 ### 2nd: You follow the steps in [Configure Azure Virtual Desktop for Azure Stack HCI via automation](https://learn.microsoft.com/en-us/azure/virtual-desktop/azure-stack-hci#configure-azure-virtual-desktop-for-azure-stack-hci-via-automation)
 
 By the end of this section you should have a set of AVD desktops hosted on your Azure Stack HCI which should be part of an AVD Hostpool e.g.:  
-![AVD desktops on HCI HostPool](./../images/hostpool.png)  
+![AVD desktops on HCI HostPool](../../images/hostpool.png)  
 The only thing missing is to [Create an application group, a workspace, and assign users in Azure Virtual Desktop](https://learn.microsoft.com/en-us/azure/virtual-desktop/create-application-group-workspace?tabs=portal) and finally [Connect to your desktops and applications](https://learn.microsoft.com/en-us/azure/virtual-desktop/users/connect-windows?tabs=subscribe#connect-to-your-desktops-and-applications).
 
 ## Option 2: Manual Process For Deploying AVD Desktops On HCI
@@ -62,5 +62,5 @@ Here is the list of manual steps:
 
 Lucky you!...  
 ...there is a video tutorial [Azure Stack HCI - Hybrid Series - Azure Virtual Desktop (AVD)](https://www.youtube.com/watch?v=pXI576Idx-c&list=PLDk1IPeq9PPeVwlvJZgo4n8Mw9Qj5gW0L&pp=gAQBiAQB) on how to do it.  
-![Youtube playlist AVD on HCI](./../images/ytplaylist.png)  
+![Youtube playlist AVD on HCI](../../images/ytplaylist.png)  
 ...and the PowerShell scripts being used are parked here: [How To Deploy AVD On AzStack HCI](https://github.com/bfrankMS/AzStackHCI/blob/main/AVD/readme)

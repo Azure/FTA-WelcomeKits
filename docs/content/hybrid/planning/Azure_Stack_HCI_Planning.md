@@ -156,7 +156,7 @@ Within Azure Stack HCI there are the following levels of resiliency:
 
 Depending on the level of resiliency select then the [storage efficiency][storageefficiency] and [number of nodes][storageminimumnodes] required will change, as well as the potential performance and use cases.
 
-![Resiliency type comparison](./../images/Resiliency-type-comparison.png "Resiliency type comparison")
+![Resiliency type comparison](../../images/Resiliency-type-comparison.png "Resiliency type comparison")
 
 ### Storage Pool Cache
 
@@ -166,7 +166,7 @@ When sizing the cache disks it is advised to have the number of cache disks to b
 
 The [cache behavior][cachebehavior] is determined by the storage pool type with All Flash using the cache for writes but not reads, where as the Hybrid type cache is used for both reads and writes.
 
-![Cache Behavior](./../images/cache-behaviour.png "Cache Behavior")
+![Cache Behavior](../../images/cache-behaviour.png "Cache Behavior")
 
 ## Network Topology
 
@@ -198,7 +198,7 @@ Another consideration for the storage traffic is bandwidth.  It is recommended t
 
 With 2 storage networks this allows for the use of [SMB Multichannel][smbmultichannel] to provide aggregation of network bandwidth and network fault tolerance.  For this configuration it is advised to have each of the storage networks using different IP networks and VLANS.
 
-![IP and VLAN Segregation](./../images/storageIPandVLAN.png "IP and VLAN Segregation")
+![IP and VLAN Segregation](../../images/storageIPandVLAN.png "IP and VLAN Segregation")
 
 **Bandwidth Allocation**
 
@@ -212,4 +212,4 @@ These reservations are an example and they can be overridden with [QoS Overrides
 
 Shown below is an example of the configuration which could be applied which would need a combination of Network ATC QoS Overrides and Live Migration Limits:
 
-![Example Bandwidth Allocation](./../images/bandwidthallocation.png "Example Bandwidth Allocation")
+![Example Bandwidth Allocation](../../images/bandwidthallocation.png "Example Bandwidth Allocation")
