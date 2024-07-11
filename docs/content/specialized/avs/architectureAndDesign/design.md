@@ -6,7 +6,7 @@ geekdocAnchor: true
 ---
 
 
-[Home](..)  
+[Home](../../..)  
 
  Welcome to the FastTrack for Azure - Azure VMware Solution Welcome Kit section on **design**. This comprehensive guide is designed to provide you with essential insights into the areas of focus and consideration when planning and designing your Azure VMware Solution migration efforts. As part of your preparation before engaging with Microsoft engineers, this resource aims to demystify these technologies, offering clear explanations and answers to frequently asked questions. Whether you're new to these concepts or seeking to deepen your understanding, this Welcome Kit is your stepping stone to navigating the world of modern cloud-native solutions.
 

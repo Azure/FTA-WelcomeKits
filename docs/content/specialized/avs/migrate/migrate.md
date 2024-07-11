@@ -6,7 +6,7 @@ geekdocAnchor: true
 ---
 
 
-[Home](..)  
+[Home](../..)  
 [Assess](#assess)  
 [Migrate](#migrate)
 
