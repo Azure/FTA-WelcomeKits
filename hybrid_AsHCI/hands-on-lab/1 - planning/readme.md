@@ -1,20 +1,37 @@
+[NoSupportForRaidController]:https://learn.microsoft.com/en-us/azure-stack/hci/concepts/system-requirements-23h2#server-and-storage-requirements
+[StorageStandard]:https://learn.microsoft.com/en-us/azure-stack/hci/concepts/host-network-requirements#rdma
+[WindowsServerCatalog]:https://www.windowsservercatalog.com/
+
 # 1 - planning: Infrastructure Setup and Integration
 
-## Exercises to Right-Size Azure Stack HCI 23H2
-Understanding Azure Stack HCI 23H2 Requirements
-Objective: Familiarize yourself with the hardware and software requirements for Azure Stack HCI 23H2 to ensure a successful deployment.
+**Purpose:**
+- Better understanding of AzStack HCI & Storage Spaces Direct (S2D)  
+- Where to go to find supported hardware
+- right-size the solution
 
-Research to find the Answers on the following questions:
+### 1. Quiz
+Research to find the answers on the following questions:
 - Your Azure Stack HCI cluster (23H2) can contain ___ to ___ nodes.
-- Identify the software prerequisites needed for Azure Stack HCI 23H2.
+- Imagine your HCI cluster has 8 nodes. How many can fail before everything goes down? Would the resilience of this cluster rise when adding 2 nodes?
+- What resiliency type would you chose for a volume hosting high performance VM workload? 
+- Can you use dual parity for a volume in a cluster with 3 nodes?
+- Nested resiliency provides a way to tolerate the outage of a disk plus another node go offline in a 2 node cluster - correct or wrong?
+- What network traffic classes do I have on an AzStack HCI cluster?
 
-
-**Exercise 2:** Assessing Your Current Infrastructure
-Objective: Assess your current infrastructure to determine if it meets the requirements for Azure Stack HCI 23H2.
-
-**Tasks:**
+### 2. Exercise: Assessing Your Current Infrastructure
+Objective: Assess your current infrastructure to determine if it meets the requirements for Azure Stack HCI 23H2.  
+Or in other words - Can I use my current HW for AzStack HCI?
 - Inventory your current hardware and software.
-- Compare your current infrastructure against the Azure Stack HCI 23H2 requirements.
+- Compare your current infrastructure against the Azure Stack HCI 23H2 requirements.  
+Some hints:
+- How is the servers local storage presented to the OS? (Raid Controller or Host Bus Adapter?) ---> [does HCI support RAID controllers?][NoSupportForRaidController]
+- Do my network adapters support RDMA for high performant storage traffic? [RDMA for storage][StorageStandard] go and find your adapter on the Windows Server Catalog [WindowsServerCatalog][WindowsServerCatalog]
+Switches: Support RDMA PFC,....
+Disks: 
+
+
+Here is how a minimal setup could look like:  
+
 
 **Exercise 3:** Planning for Scalability and Performance
 Objective: Plan your Azure Stack HCI 23H2 deployment for scalability and performance based on your organization's needs.

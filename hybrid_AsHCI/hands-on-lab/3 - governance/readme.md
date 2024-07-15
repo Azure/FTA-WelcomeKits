@@ -27,4 +27,8 @@ Management:
 
 **Exercise:** Enable / Validate HCI monitoring.
 
+adding / repairing a disk.
+adding / repairing a node.
+
+
 [◀ 2 - deployment](../2%20-%20deployment/readme.md) | [🔼 hands-on-lab](../readme.md) | [4 - scenarios ▶](../4%20-%20scenarios/readme.md)
