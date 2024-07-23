@@ -28,6 +28,8 @@ Welcome to the ultimate guide for Azure Stack HCI enthusiasts! Whether you are e
 - **AKS Hybrid:** Implementation of Azure Kubernetes Service in hybrid environments, enabling efficient management of containerized applications across diverse infrastructures ([AKS Hybrid Configuration](https://aka.ms/FTAWelcomeKit/Hybrid/AKS)).
 - **SDN:** Deployment of Software-Defined Networking to enhance network agility, security, and performance in Azure Stack HCI ([SDN Implementation Strategies](https://aka.ms/FTAWelcomeKit/Hybrid/SDN)).
   
+## [hands-on-lab](./hands-on-lab/readme.md)  
+Our lab guide for self paced learning on Azure Stack HCI. A collection and curated list of scenarios and tasks from planning, deployment to operations.
     
 [🔼 FastTrack for Azure Welcome Kits](../README.md) 
 
