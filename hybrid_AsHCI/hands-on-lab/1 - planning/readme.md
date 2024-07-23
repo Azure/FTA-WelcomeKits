@@ -80,9 +80,10 @@ Questions:
 Objective: Estimate the cost of deploying Azure Stack HCI 23H2 and explore ways to optimize spending.
 
 **Task 4:**
-- Use the Azure Pricing Calculator to estimate the cost of your Azure Stack HCI system.
+- Use the Azure Pricing Calculator to estimate the cost of your Azure Stack HCI system. - How does physical Core Count impact the cost?
 - Know the costs for the intended services to run ontop of HCI (e.g. Windows VMs, AVD, AKS,...)
 - Identify potential areas for cost savings, such as hybrid benefits.
+- For smaller clusters - would a switchless deployment for storage help you save costs?
 - How would you [License Windows Server VMs on Azure Stack HCI][WindowsOnHCI]?
 
 
