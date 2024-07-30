@@ -1,0 +1,2 @@
+Brainstorming:  
+- How to Bitlocker recovery (key) required due to Update (driver/FW) in HW that does prevent all nodes to reboot.(need to enable bitlocker recovery key tools RSAT -> Features to view them on AD )

@@ -33,5 +33,7 @@ Covering following areas of interest:
 - **AKS Hybrid:** Install AKS hybrid on HCI, deploy simple app, implement LBalancing, update, allow only specific ACR using azure policy,...
 - **AVD on HCI:** Download MPlace Image, Deploy AVD Host Pool, Connect Using Client, Do A Custom Image, enable activation, enable VM Start On Connect, Do a Scaling Plan.
 - ...  
+
+## [5 - troubleshooting: Labs for troubleshooting](./5%20-%20troubleshooting/readme.md)  
     
 [🔼 FastTrack for Azure Welcome Kits](../README.md) 
