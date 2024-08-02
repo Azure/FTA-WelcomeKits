@@ -156,8 +156,14 @@ Azure Hybrid Benefit for AKS enabled by Arc can help you significantly reduce th
 
 For more information about Software Assurance and with which agreements it's available, see [Benefits of Software Assurance](https://www.microsoft.com/licensing/licensing-programs/software-assurance-by-benefits).
 
+?? where to put Operations -  Monitoring   ? FAQ or ReadMe ? 
 
-## Reference Links : 
+
+## Next Steps 
+Add Aks vs Akson HCI comparision
+Add FAQ 
+
+### Reference Links : 
 
 - [What is AKS enabled by Azure Arc](https://learn.microsoft.com/en-us/azure/aks/hybrid/aks-overview)
 - [AKS on Azure Stack HCI 23H2 architecture](https://learn.microsoft.com/en-us/azure/aks/hybrid/cluster-architecture)
