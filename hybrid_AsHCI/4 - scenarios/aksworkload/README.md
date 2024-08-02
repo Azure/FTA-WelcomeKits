@@ -32,7 +32,9 @@ Azure provides you differernt options to install AKS enabled by Azure Arc Cluste
 - **AKS on Windows Server**: Azure Kubernetes Service on Windows Server (and on Azure Stack HCI 22H2) is an on-premises Kubernetes implementation of AKS that automates running containerized applications at scale, using Windows PowerShell and Windows Admin Center. It simplifies deployment and management of AKS on Windows Server 2019/2022 Datacenter and Azure Stack HCI 22H2.
 - **AKS on VMWare (preview)**: AKS on VMware (preview) enables you to use Azure Arc to create new Kubernetes clusters on VMware vSphere. With AKS on VMware, you can manage your AKS clusters running on VMware vSphere using familiar tools like Azure CLI.
 
-To get started with AKS enabled by Azure Arc, see the following deployment option overviews:
+![Cluster Architecture](image.png)
+
+See the following deployment option overviews on our public documents : 
 
 - [AKS on Azure Stack HCI 23H2](https://learn.microsoft.com/en-us/azure/aks/hybrid/aks-whats-new-23h2)
 - [AKS on Windows Server](https://learn.microsoft.com/en-us/azure/aks/hybrid/overview)
