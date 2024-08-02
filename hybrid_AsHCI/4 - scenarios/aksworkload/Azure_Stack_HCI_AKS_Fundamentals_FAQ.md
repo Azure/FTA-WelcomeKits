@@ -21,8 +21,7 @@ Welcome to the "Azure Stack HCI – AKS Fundamentals FAQ Welcome Kit." This comp
 - AKS is a fully managed Kubernetes service provided by Microsoft that runs in the Azure cloud, while Azure Stack HCI AKS is a Kubernetes service that runs on-premises on Azure Stack HCI.
 - AKS provides integrated support for Azure services such as Azure Active Directory, Azure Monitor, and Azure Policy, while Azure Stack HCI AKS is designed to work with Azure Arc, which provides a unified management experience across on-premises, multi-cloud, and edge environments.
 - AKS provides built-in security features such as network isolation, role-based access control, and private container registry, while Azure Stack HCI AKS requires additional configuration to implement these features.
-- AKS provides automatic scaling of the Kubernetes cluster based on workload demands, while Azure Stack HCI AKS requires manual scaling.
-- AKS provides a simplified billing model compared to running Kubernetes on your own infrastructure, as you only pay for the resources used by the AKS cluster. Azure Stack HCI AKS is included as part of the Azure Stack HCI subscription, which has a different billing model.
+- AKS provides a simplified billing model compared to running Kubernetes on your own infrastructure, as you only pay for the resources used by the AKS cluster. Azure Stack HCI AKS is included as part of the Azure Stack HCI subscription, which has a different billing model.[AKS on HCI pricing](https://azure.microsoft.com/en-us/pricing/details/azure-stack/aks-hci/)
 
 ### What are capabilities that Azure Stack HCI aks does not provide compared with AKS itself?
 - Azure Stack HCI AKS does not provide the same level of integration with Azure services as AKS, such as Azure Active Directory, Azure Monitor, and Azure Policy.
