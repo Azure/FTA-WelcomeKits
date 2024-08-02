@@ -62,7 +62,7 @@ Control plane nodes run the following major components (not an exhaustive list):
 
 In Kubernetes, a node pool is a group of nodes within a cluster that share the same configuration. Node pools allow you to create and manage sets of nodes that have specific roles, capabilities, or hardware configurations, enabling more granular control over the infrastructure of your AKS cluster. You can deploy Linux or Windows node pools in your AKS cluster. However, you need to have at least 1 Linux nodepool to host the Arc agents to maintain connectivity with Azure.
 
-# AKS on HCI Network Requirements
+# AKS enabled by Azure Arc network requirements
 
 The below components need a static IP address in order for the AKS Arc cluster and applications to create and operate successfully:
 
@@ -72,22 +72,10 @@ The below components need a static IP address in order for the AKS Arc cluster a
 
 ## Networking for AKS cluster VMs
 
-Kubernetes nodes are deployed as specialized virtual machines in AKS enabled by Arc. These VMs are allocated IP addresses to enable communication between Kubernetes nodes. AKS Arc uses Azure Stack HCI logical networks to provide IP addresses and networking for the underlying VMs of the Kubernetes clusters. For more information about logical networks, see [Logical networks for Azure Stack HCI](/azure-stack/hci/manage/create-logical-networks?tabs=azurecli). You must plan to reserve one IP address per AKS cluster node VM in your Azure Stack HCI environment.
+Kubernetes nodes are deployed as specialized virtual machines in AKS enabled by Arc. These VMs are allocated IP addresses to enable communication between Kubernetes nodes. AKS Arc uses Azure Stack HCI logical networks to provide IP addresses and networking for the underlying VMs of the Kubernetes clusters. For more information about logical networks, see [Logical networks for Azure Stack HCI](https://learn.microsoft.com/en-us/azure-stack/hci/manage/create-logical-networks?tabs=azurecli). You must plan to reserve one IP address per AKS cluster node VM in your Azure Stack HCI environment.
 
 > [!NOTE]
 > Static IP is the only supported mode for assigning an IP address to AKS Arc VMs. This is because Kubernetes requires the IP address assigned to a Kubernetes node to be constant throughout the lifecycle of the Kubernetes cluster.
-
-The following parameters are required in order to use a logical network for AKS Arc cluster create operation:
-
-| Logical network parameter| Description| Required parameter for AKS Arc cluster|
-|------------------|---------|-----------|
-| `--address-prefixes` | AddressPrefix for the network. Currently only 1 address prefix is supported. Usage: `--address-prefixes "10.220.32.16/24"`. | ![Supported](media/aks-hybrid-networks/check.png) |
-| `--dns-servers`      | Space-separated list of DNS server IP addresses. Usage: `--dns-servers 10.220.32.16 10.220.32.17`. | ![Supported](media/aks-hybrid-networks/check.png) |
-| `--gateway`         | Gateway. The gateway IP address must be within the scope of the address prefix. Usage: `--gateway 10.220.32.16`. | ![Supported](media/aks-hybrid-networks/check.png) |
-| `--ip-allocation-method`         | The IP address allocation method. Supported values are "Static". Usage: `--ip-allocation-method "Static"`. | ![Supported](media/aks-hybrid-networks/check.png) |
-| `--ip-pool-start`     | The start IP address of your IP pool. The address must be in range of the address prefix. Usage: `--ip-pool-start "10.220.32.18"`.  | ![Supported](media/aks-hybrid-networks/check.png) |
-| `--ip-pool-end`       | The end IP address of your IP pool. The address must be in range of the address prefix. Usage: `--ip-pool-end "10.220.32.38"`.  | ![Supported](media/aks-hybrid-networks/check.png) |
-| `--vm-switch-name`     | The name of the VM switch. Usage: `--vm-switch-name "vm-switch-01"`. | ![Supported](media/aks-hybrid-networks/check.png) |
 
 ## Control plane IP
 
@@ -100,7 +88,7 @@ Kubernetes uses a control plane to ensure every component in the Kubernetes clus
 
 The main purpose of a load balancer is to distribute traffic across multiple nodes in a Kubernetes cluster. This load balancing can help prevent downtime and improve overall performance of applications. AKS supports the following options to deploy a load balancer for your Kubernetes cluster:
 
-- [Deploy MetalLB load balancer using Azure Arc extension](deploy-load-balancer-portal.md).
+- [Deploy MetalLB load balancer using Azure Arc extension](https://learn.microsoft.com/en-us/azure/aks/hybrid/deploy-load-balancer-portal).
 - Bring your own third party load balancer.
 
 Whether you choose the MetalLB Arc extension, or bring your own load balancer, you must provide a set of IP addresses to the load balancer service. You have the following options:
@@ -121,14 +109,58 @@ In the following scenario walk-through, you reserve IP addresses from a single n
 | Control plane IP | Reserve one IP address for every Kubernetes cluster in your environment. For example, if you want to create 5 clusters in total, reserve 5 IP addresses, one for each Kubernetes cluster. | Reserve IP addresses for control plane IPs in the same subnet as Arc VM logical network, but outside the specified IP pool. |
 | Load balancer IPs | The number of IP addresses reserved depends on your application deployment model. As a starting point, you can reserve one IP address for every Kubernetes service. | Reserve IP addresses for control plane IPs in the same subnet as Arc VM logical network, but outside the specified IP pool. |
 
+# Access and identity options for AKS enabled by Azure Arc
 
+Applies to: AKS on Azure Stack HCI 23H2
 
+You can authenticate, authorize, secure, and control access to Kubernetes clusters in various ways:
 
+- With [Kubernetes role-based access control (Kubernetes RBAC)](https://learn.microsoft.com/en-us/azure/aks/hybrid/kubernetes-rbac-23h2), you can grant users, groups, and service accounts access to only the Kubernetes resources they need.
+- With [AKS clusters enabled with Azure RBAC](https://learn.microsoft.com/en-us/azure/aks/hybrid/azure-rbac-23h2), you can further enhance the security and permissions structure using Microsoft Entra ID and Azure RBAC.
 
+## Azure role-based access control
+
+Azure Role-based Access Control (RBAC) is an authorization system built on [Azure Resource Manager](/azure/azure-resource-manager/management/overview) that provides fine-grained access management of Azure resources.
+
+| RBAC system | Description                                              |
+| --------------- | ------------------------------------------------------------ |
+| [Kubernetes RBAC](https://learn.microsoft.com/en-us/azure/aks/hybrid/kubernetes-rbac-23h2) | Designed to work on Kubernetes resources within your AKS cluster. |
+| [Azure RBAC](https://learn.microsoft.com/en-us/azure/aks/hybrid/azure-rbac-23h2)      | Designed to work on resources within your Azure subscription. |
+
+With Azure RBAC, you create a *role definition* that outlines the permissions to be applied. You then assign a user or group this role definition via a *role assignment* for a particular *scope*. The scope can be an individual resource, a resource group, or across the subscription.
+
+For more information, see [What is Azure role-based access control (Azure RBAC)?](https://learn.microsoft.com/en-us/azure/role-based-access-control/overview)
+
+There are two required levels of access to fully operate an AKS Arc cluster:
+
+- Access the AKS resource in your Azure subscription.
+  - Control scaling or upgrading your cluster using the AKS enabled by Azure Arc APIs.
+  - Pull your **admin, certificate-based kubeconfig**.
+  - Pull your **Entra ID enabled kubeconfig**.
+- Access to the Kubernetes API. This access is controlled by either:
+  - Kubernetes RBAC, or
+  - Integrating Azure RBAC with AKS for Kubernetes authorization.
+
+# Azure Hybrid Benefit for AKS enabled by Azure Arc (AKS on Azure Stack HCI 23H2)
+
+Azure Hybrid Benefit is a program that enables you to significantly reduce the costs of running workloads in the cloud. With Azure Hybrid Benefit for AKS enabled by Azure Arc, you can maximize the value of your on-premises licenses and modernize your applications at no additional cost.
+
+## What is Azure Hybrid Benefit for AKS enabled by Arc?
+
+Azure Hybrid Benefit for AKS enabled by Arc can help you significantly reduce the cost of running Kubernetes on-premises or at the edge. It works by letting you apply your on-premises Windows Server Datacenter or Standard licenses with Software Assurance (SA) to pay for AKS. Each Windows Server core license entitles use on 1 virtual core of AKS. There are a few important details to note regarding activation of the benefit for AKS:
+
+- Azure Hybrid Benefit for AKS Arc is enabled at the management cluster (or AKS host) level. You don't need to enable the benefit for workload clusters.
+- If you have multiple AKS on Azure Stack HCI or Windows Server deployments, you must enable Azure Hybrid Benefit individually for each deployment.
+- If you enable Azure Hybrid Benefit on an AKS Arc deployment during the trial period, it doesn't nullify your trial period. The benefit is activated immediately, and is applied at the end of the trial period.
+- Reinstalling AKS Arc doesn't automatically reinstate the benefit. You must reactivate this benefit for the new deployment.
+
+For more information about Software Assurance and with which agreements it's available, see [Benefits of Software Assurance](https://www.microsoft.com/licensing/licensing-programs/software-assurance-by-benefits).
 
 
 ## Reference Links : 
 
 - [What is AKS enabled by Azure Arc](https://learn.microsoft.com/en-us/azure/aks/hybrid/aks-overview)
 - [AKS on Azure Stack HCI 23H2 architecture](https://learn.microsoft.com/en-us/azure/aks/hybrid/cluster-architecture)
-
+- [AKS enabled by Azure Arc network requirements](https://learn.microsoft.com/en-us/azure/aks/hybrid/aks-hci-network-system-requirements)
+- [Access and identity options for AKS enabled by Azure Arc](https://learn.microsoft.com/en-us/azure/aks/hybrid/concepts-security-access-identity)
+- [Azure Hybrid Benefit for AKS enabled by Azure Arc (AKS on Azure Stack HCI 23H2)](https://learn.microsoft.com/en-us/azure/aks/hybrid/azure-hybrid-benefit)
