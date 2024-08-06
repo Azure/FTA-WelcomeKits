@@ -1,6 +1,6 @@
 ---
 title: What is AKS enabled by Azure Arc?
-description: Learn about AKS enabled by Azure Arc and available deployment options.
+description: Learn about AKS enabled by Azure Arc.
 ms.topic: overview
 ms.date: 08/02/2024
 author: belginceran     
@@ -141,22 +141,27 @@ There are two required levels of access to fully operate an AKS Arc cluster:
   - Kubernetes RBAC, or
   - Integrating Azure RBAC with AKS for Kubernetes authorization.
 
+# Storage options for applications in AKS enabled by Azure Arc
+
+  ![alt text](image.png)
+
+You can use AKS disk volumes backed by VHDX that are mounted as ReadWriteOnce and are accessible to a single node at a time. Or, you can use AKS file volumes backed by SMB or NFS file shares. These are mounted as ReadWriteMany and are available to multiple nodes concurrently.
+
+You can use Container Storage Interface (CSI) built-in storage classes to dynamically create disk persistent volumes and create custom storage classes in AKS enabled by Arc. For more information : https://learn.microsoft.com/en-us/azure/aks/hybrid/container-storage-interface-disks?tabs=23H2
+
 # Azure Hybrid Benefit for AKS enabled by Azure Arc (AKS on Azure Stack HCI 23H2)
 
 Azure Hybrid Benefit is a program that enables you to significantly reduce the costs of running workloads in the cloud. With Azure Hybrid Benefit for AKS enabled by Azure Arc, you can maximize the value of your on-premises licenses and modernize your applications at no additional cost.
 
-## What is Azure Hybrid Benefit for AKS enabled by Arc?
 
-Azure Hybrid Benefit for AKS enabled by Arc can help you significantly reduce the cost of running Kubernetes on-premises or at the edge. It works by letting you apply your on-premises Windows Server Datacenter or Standard licenses with Software Assurance (SA) to pay for AKS. Each Windows Server core license entitles use on 1 virtual core of AKS. There are a few important details to note regarding activation of the benefit for AKS:
 
-- Azure Hybrid Benefit for AKS Arc is enabled at the management cluster (or AKS host) level. You don't need to enable the benefit for workload clusters.
-- If you have multiple AKS on Azure Stack HCI or Windows Server deployments, you must enable Azure Hybrid Benefit individually for each deployment.
-- If you enable Azure Hybrid Benefit on an AKS Arc deployment during the trial period, it doesn't nullify your trial period. The benefit is activated immediately, and is applied at the end of the trial period.
-- Reinstalling AKS Arc doesn't automatically reinstate the benefit. You must reactivate this benefit for the new deployment.
 
-For more information about Software Assurance and with which agreements it's available, see [Benefits of Software Assurance](https://www.microsoft.com/licensing/licensing-programs/software-assurance-by-benefits).
 
-?? where to put Operations -  Monitoring   ? FAQ or ReadMe ? 
+
+
+
+Add something for Storage 
+?? where to put Operations(Update and backup) -  Monitoring   ? FAQ or ReadMe ? 
 
 
 ## Next Steps 
