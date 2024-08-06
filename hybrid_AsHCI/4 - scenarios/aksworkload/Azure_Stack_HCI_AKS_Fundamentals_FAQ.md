@@ -100,12 +100,18 @@ Welcome to the "Azure Stack HCI – AKS Fundamentals FAQ Welcome Kit." This comp
 ### Is Azure Backup supported on AKS on HCI ?
 - No, as of now it is not supported. You can leverege 3rd party solutions like Velero. [Velero](https://velero.io/docs/main/) is an open source backup solution for Kubernetes clusters. You can find more information here : https://learn.microsoft.com/en-us/azure/aks/hybrid/backup-workload-cluster
 
-## Does AKS on HCI support Autoscaling? 
+### Does AKS on HCI support Autoscaling? 
 - Yes, You can now enable the autoscaling feature when you create or update Kubernetes clusters and node pools.
 
-## Can I use RBAC with AKS on HCI ? 
+### Can I use RBAC with AKS on HCI ? 
 - Yes, you can now enable Azure RBAC for Kubernetes while creating AKS Arc clusters using Azure CLI and Azure Resource Manager templates.
 
-## Can I use Taint and Labels ? 
+### Can I use Taint and Labels ? 
 - Yes, you can use and update taint and labels.
+
+### Should I update my Azure Stack HCI and AKS on HCI clusters seperately ?
+Azure Stack HCI 23H2 consolidates all the relevant updates for the OS, software agents, Azure Arc infrastructure, and OEM drivers and firmware into a unified monthly update package. This comprehensive update package is identified and applied from the cloud through the Azure Update Manager tool.
+
+AKS is now part of Azure Stack HCI starting from version 23H2. The lifecycle management of AKS enabled by Azure Arc infrastructure follows the same approach as any other components on Azure Stack HCI 23H2. More information can be found here : [Cloud-based updates for infrastructure components](https://learn.microsoft.com/en-us/azure/aks/hybrid/cluster-architecture#cloud-based-updates-for-infrastructure-components)
+[Updates for Azure Stack HCI, version 23H2](https://learn.microsoft.com/en-us/azure-stack/hci/update/about-updates-23h2)
 
