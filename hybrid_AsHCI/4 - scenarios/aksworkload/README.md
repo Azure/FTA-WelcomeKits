@@ -156,6 +156,7 @@ Azure Hybrid Benefit is a program that enables you to significantly reduce the c
 
 ## Next  
 [What's new in AKS on Azure Stack HCI version 23H2](https://learn.microsoft.com/en-us/azure/aks/hybrid/aks-whats-new-23h2)
+[How do AKS and AKS on Azure Stack HCI compare?](https://techcommunity.microsoft.com/t5/azure-arc-blog/how-do-aks-and-aks-on-azure-stack-hci-compare/ba-p/3761670)
 
 ### Reference Links : 
 
