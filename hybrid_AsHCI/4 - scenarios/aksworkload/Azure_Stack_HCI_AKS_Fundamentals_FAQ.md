@@ -42,8 +42,8 @@ Welcome to the "Azure Stack HCI – AKS Fundamentals FAQ Welcome Kit." This comp
 
 - Azure Stack HCI AKS may not have the same level of automation and ease of use as AKS, as it may require more manual configuration and management.
     - **Deployment** - Deploying Azure Stack HCI AKS may require more manual configuration compared to AKS, as it involves setting up the Azure Stack HCI infrastructure and configuring the AKS service on top of it.
-    - !!! **Scaling** - Scaling Azure Stack HCI AKS may require more manual configuration compared to AKS, as it may involve adding or removing nodes from the on-premises infrastructure and configuring the AKS service accordingly.
-    - !!!! **Upgrades** - Upgrading Azure Stack HCI AKS may require more manual configuration compared to AKS, as it may involve upgrading the Azure Stack HCI infrastructure and then upgrading the AKS service on top of it.*
+    - **Scaling** - Scaling Azure Stack HCI AKS may require more manual configuration compared to AKS, as it may involve adding or removing nodes from the on-premises infrastructure and configuring the AKS service accordingly.
+    - **Upgrades** - Upgrading Azure Stack HCI AKS may require more manual configuration compared to AKS, as it may involve upgrading the Azure Stack HCI infrastructure and then upgrading the AKS service on top of it.*
     - **Monitoring** - Monitoring Azure Stack HCI AKS may require more manual configuration compared to AKS, as it may involve setting up monitoring tools on the on-premises infrastructure and configuring them to work with the AKS service.
 - Azure Stack HCI AKS may not have the same level of security features as AKS, as it may require additional configuration to implement features such as network isolation, role-based access control, and private container registry.
     - **Network isolation** - Additional configuration may be required to implement security features such as network isolation.
@@ -114,4 +114,6 @@ Azure Stack HCI 23H2 consolidates all the relevant updates for the OS, software 
 
 AKS is now part of Azure Stack HCI starting from version 23H2. The lifecycle management of AKS enabled by Azure Arc infrastructure follows the same approach as any other components on Azure Stack HCI 23H2. More information can be found here : [Cloud-based updates for infrastructure components](https://learn.microsoft.com/en-us/azure/aks/hybrid/cluster-architecture#cloud-based-updates-for-infrastructure-components)
 [Updates for Azure Stack HCI, version 23H2](https://learn.microsoft.com/en-us/azure-stack/hci/update/about-updates-23h2)
+
+This does not cover the customer workload clusters, so you need to update your AKS version. You can find the steps here : [Upgrade an Azure Kubernetes Service (AKS) cluster](https://learn.microsoft.com/en-us/azure/aks/hybrid/cluster-upgrade)
 
