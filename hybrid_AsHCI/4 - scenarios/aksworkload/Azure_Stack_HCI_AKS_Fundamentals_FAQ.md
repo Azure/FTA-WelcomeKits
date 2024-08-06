@@ -42,8 +42,8 @@ Welcome to the "Azure Stack HCI – AKS Fundamentals FAQ Welcome Kit." This comp
 
 - Azure Stack HCI AKS may not have the same level of automation and ease of use as AKS, as it may require more manual configuration and management.
     - **Deployment** - Deploying Azure Stack HCI AKS may require more manual configuration compared to AKS, as it involves setting up the Azure Stack HCI infrastructure and configuring the AKS service on top of it.
-    - **Scaling** - Scaling Azure Stack HCI AKS may require more manual configuration compared to AKS, as it may involve adding or removing nodes from the on-premises infrastructure and configuring the AKS service accordingly.
-    - **Upgrades** - Upgrading Azure Stack HCI AKS may require more manual configuration compared to AKS, as it may involve upgrading the Azure Stack HCI infrastructure and then upgrading the AKS service on top of it.*
+    - !!! **Scaling** - Scaling Azure Stack HCI AKS may require more manual configuration compared to AKS, as it may involve adding or removing nodes from the on-premises infrastructure and configuring the AKS service accordingly.
+    - !!!! **Upgrades** - Upgrading Azure Stack HCI AKS may require more manual configuration compared to AKS, as it may involve upgrading the Azure Stack HCI infrastructure and then upgrading the AKS service on top of it.*
     - **Monitoring** - Monitoring Azure Stack HCI AKS may require more manual configuration compared to AKS, as it may involve setting up monitoring tools on the on-premises infrastructure and configuring them to work with the AKS service.
 - Azure Stack HCI AKS may not have the same level of security features as AKS, as it may require additional configuration to implement features such as network isolation, role-based access control, and private container registry.
     - **Network isolation** - Additional configuration may be required to implement security features such as network isolation.
@@ -97,6 +97,9 @@ Welcome to the "Azure Stack HCI – AKS Fundamentals FAQ Welcome Kit." This comp
 - **Automation and Scripting** - Both platforms can also be managed using APIs and command-line interfaces (CLIs). Useful for automation and scripting purposes.
 ### Can Resource Bridge manage other types of resources besides VMs?
 - Yes, Resource Bridge can manage various types of resources beyond VMs. It can be used to connect and manage Kubernetes clusters, databases, virtual machines, and more, regardless of whether they are hosted on-premises or in the cloud.
+### Does Azure Backup supported on AKS on HCI ?
+- No, as of now it is not supported. You can leverege 3rd party solutions like Velero. [Velero](https://velero.io/docs/main/) is an open source backup solution for Kubernetes clusters. You can find more information here : https://learn.microsoft.com/en-us/azure/aks/hybrid/backup-workload-cluster
+
 
 
 
