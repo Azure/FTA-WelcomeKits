@@ -42,7 +42,7 @@ Welcome to the "Azure Stack HCI – AKS Fundamentals FAQ Welcome Kit." This comp
 
 - Azure Stack HCI AKS may not have the same level of automation and ease of use as AKS, as it may require more manual configuration and management.
     - **Deployment** - Deploying Azure Stack HCI AKS may require more manual configuration compared to AKS, as it involves setting up the Azure Stack HCI infrastructure and configuring the AKS service on top of it.
-*    - **Scaling** - Scaling Azure Stack HCI AKS may require more manual configuration compared to AKS, as it may involve adding or removing nodes from the on-premises infrastructure and configuring the AKS service accordingly.
+    - **Scaling** - Scaling Azure Stack HCI AKS may require more manual configuration compared to AKS, as it may involve adding or removing nodes from the on-premises infrastructure and configuring the AKS service accordingly.
     - **Upgrades** - Upgrading Azure Stack HCI AKS may require more manual configuration compared to AKS, as it may involve upgrading the Azure Stack HCI infrastructure and then upgrading the AKS service on top of it.*
     - **Monitoring** - Monitoring Azure Stack HCI AKS may require more manual configuration compared to AKS, as it may involve setting up monitoring tools on the on-premises infrastructure and configuring them to work with the AKS service.
 - Azure Stack HCI AKS may not have the same level of security features as AKS, as it may require additional configuration to implement features such as network isolation, role-based access control, and private container registry.
