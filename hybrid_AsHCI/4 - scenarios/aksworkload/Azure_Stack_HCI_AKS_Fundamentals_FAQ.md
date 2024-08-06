@@ -98,7 +98,9 @@ Welcome to the "Azure Stack HCI – AKS Fundamentals FAQ Welcome Kit." This comp
 ### Can Resource Bridge manage other types of resources besides VMs?
 - Yes, Resource Bridge can manage various types of resources beyond VMs. It can be used to connect and manage Kubernetes clusters, databases, virtual machines, and more, regardless of whether they are hosted on-premises or in the cloud.
 ### How can I deploy AKS cluster(Workload Cluster) on HCI ?
-- There are differernt options that you can use to deploy workload clusters. You can use Azure CLI, Azure Portal, Bicep or ARM Templates as well. With Stack HCI 23H2 we introduced aksarc extension. Windows Administrator Center is not a valid deployment option as of now. You can find more information here [Creating AKS clusters](https://learn.microsoft.com/en-us/azure/aks/hybrid/aks-create-clusters-cli)
+- There are differernt options that you can use to deploy workload clusters. You can use Azure CLI, Azure Portal, Bicep or ARM Templates as well. Windows Administrator Center is not a valid deployment option as of now. You can find more information here [Creating AKS clusters](https://learn.microsoft.com/en-us/azure/aks/hybrid/aks-create-clusters-cli)
+### What is az aksarc command for ? 
+- With Azure Stack HCI 23H2 version, we introduced a new extension. You can use aksarc extension for your AKS on HCI operations. You can find more information here [az aksarc](https://learn.microsoft.com/en-us/cli/azure/aksarc?view=azure-cli-latest)
 ### Is Azure Backup supported on AKS on HCI ?
 - No, as of now it is not supported. You can leverege 3rd party solutions like Velero. [Velero](https://velero.io/docs/main/) is an open source backup solution for Kubernetes clusters. You can find more information here : https://learn.microsoft.com/en-us/azure/aks/hybrid/backup-workload-cluster
 ### Does AKS on HCI support Autoscaling? 
