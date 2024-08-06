@@ -154,19 +154,8 @@ You can use Container Storage Interface (CSI) built-in storage classes to dynami
 Azure Hybrid Benefit is a program that enables you to significantly reduce the costs of running workloads in the cloud. With Azure Hybrid Benefit for AKS enabled by Azure Arc, you can maximize the value of your on-premises licenses and modernize your applications at no additional cost.
 
 
-
-
-
-
-
-
-Add something for Storage 
-?? where to put Operations(Update and backup) -  Monitoring   ? FAQ or ReadMe ? 
-
-
-## Next Steps 
-Add Aks vs Akson HCI comparision
-Add FAQ 
+## Next  
+[What's new in AKS on Azure Stack HCI version 23H2](https://learn.microsoft.com/en-us/azure/aks/hybrid/aks-whats-new-23h2)
 
 ### Reference Links : 
 

@@ -97,9 +97,15 @@ Welcome to the "Azure Stack HCI – AKS Fundamentals FAQ Welcome Kit." This comp
 - **Automation and Scripting** - Both platforms can also be managed using APIs and command-line interfaces (CLIs). Useful for automation and scripting purposes.
 ### Can Resource Bridge manage other types of resources besides VMs?
 - Yes, Resource Bridge can manage various types of resources beyond VMs. It can be used to connect and manage Kubernetes clusters, databases, virtual machines, and more, regardless of whether they are hosted on-premises or in the cloud.
-### Does Azure Backup supported on AKS on HCI ?
+### Is Azure Backup supported on AKS on HCI ?
 - No, as of now it is not supported. You can leverege 3rd party solutions like Velero. [Velero](https://velero.io/docs/main/) is an open source backup solution for Kubernetes clusters. You can find more information here : https://learn.microsoft.com/en-us/azure/aks/hybrid/backup-workload-cluster
 
+## Does AKS on HCI support Autoscaling? 
+- Yes, You can now enable the autoscaling feature when you create or update Kubernetes clusters and node pools.
 
+## Can I use RBAC with AKS on HCI ? 
+- Yes, you can now enable Azure RBAC for Kubernetes while creating AKS Arc clusters using Azure CLI and Azure Resource Manager templates.
 
+## Can I use Taint and Labels ? 
+- Yes, you can use and update taint and labels.
 
