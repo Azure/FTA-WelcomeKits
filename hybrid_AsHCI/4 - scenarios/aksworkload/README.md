@@ -143,7 +143,7 @@ There are two required levels of access to fully operate an AKS Arc cluster:
 
 # Storage options for applications in AKS enabled by Azure Arc
 
-  ![alt text](image.png)
+  ![alt text](storage.png)
 
 You can use AKS disk volumes backed by VHDX that are mounted as ReadWriteOnce and are accessible to a single node at a time. Or, you can use AKS file volumes backed by SMB or NFS file shares. These are mounted as ReadWriteMany and are available to multiple nodes concurrently.
 
