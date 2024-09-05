@@ -1,7 +1,7 @@
 # 4 - scenario: Services and Applications
 
 ## Table Of Content
-- [Scenarios - Azure Stack HCI - AKS hybrid](./aksworkload/readme.md)
+- [Scenarios - Azure Stack HCI - AKS hybrid](./aksworkload/README.md)
 - [Scenarios - Azure Stack HCI - Azure Virtual Desktop on HCI](./avd/readme.md)
 - [Scenarios - Azure Stack HCI - Migration](./migration/readme.md)
     
