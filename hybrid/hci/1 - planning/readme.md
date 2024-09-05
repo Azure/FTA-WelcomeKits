@@ -1,3 +1,14 @@
+---
+title: Infrastructure Setup and Integration
+description: 
+ms.topic: overview
+ms.date: 08/02/2024
+author:      
+ms.author:  
+ms.reviewer: 
+ms.lastreviewed: 08/02/2024
+---
+
 [catalog]:https://azurestackhcisolutions.azure.microsoft.com/#/catalog
 [switchrequirements]:https://learn.microsoft.com/en-us/azure-stack/hci/concepts/physical-network-requirements?tabs=overview%2C22H2reqs#network-switch-requirements
 [requiredrules]:https://learn.microsoft.com/en-us/azure-stack/hci/concepts/firewall-requirements#required-firewall-urls
@@ -50,6 +61,7 @@
 [smbmultichannel]:https://learn.microsoft.com/en-us/azure-stack/hci/manage/manage-smb-multichannel
 [netatcoverrides]:https://learn.microsoft.com/en-us/azure-stack/hci/manage/manage-network-atc?tabs=21H2#update-or-override-network-settings
 [livemigrateqos]:https://learn.microsoft.com/en-us/powershell/module/smbshare/set-smbbandwidthlimit?view=windowsserver2022-ps#example-2-add-an-smb-limit-for-live-migration
+
 
 # 1 - planning: Infrastructure Setup and Integration
 
@@ -226,4 +238,4 @@ Shown below is an example of the configuration which could be applied which woul
 
 ![Example Bandwidth Allocation](./../images/bandwidthallocation.png "Example Bandwidth Allocation")
 
-[🔼 hybrid_AsHCI](../readme.md) | [2 - deployment ▶](../2%20-%20deployment/readme.md)
+[🔼 HCI](../../readme.md) | [2 - deployment ▶](../2%20-%20deployment/readme.md)

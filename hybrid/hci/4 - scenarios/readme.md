@@ -6,4 +6,4 @@
 - [Scenarios - Azure Stack HCI - Migration](./migration/readme.md)
     
 
-[◀ 3 - governance](../3%20-%20governance/readme.md) | [🔼 hybrid_AsHCI](../readme.md)
+[◀ 3 - governance](../3%20-%20governance/readme.md) | [🔼 HCI](../../readme.md)

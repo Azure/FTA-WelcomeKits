@@ -36,4 +36,4 @@ Covering following areas of interest:
 
 ## [5 - troubleshooting: Labs for troubleshooting](./5%20-%20troubleshooting/readme.md)  
     
-[🔼 FastTrack for Azure Welcome Kits](../README.md) 
+[🔼 HCI](../../readme.md)
