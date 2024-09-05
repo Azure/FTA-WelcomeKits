@@ -3,7 +3,6 @@
 [stretchcluster22h2]:https://learn.microsoft.com/en-us/azure-stack/hci/deploy/create-cluster-powershell#step-5-set-up-sites-stretched-cluster
 [deploy22h2video]:https://www.youtube.com/watch?v=LIkW5s4mQoA&list=PLDk1IPeq9PPdd1Al9VitnrFrr5DnTI5sZ
 [stretchcluster22h2video]:https://www.youtube.com/watch?v=QmLmcKjmf_U&list=PLDk1IPeq9PPfzO44pB-9-82r07Q4K6tYW
-[planningwelcomekit]:https://aka.ms/FTAWelcomeKit/Hybrid/Planning
 [environmentchecker]:https://learn.microsoft.com/en-us/azure-stack/hci/manage/use-environment-checker?tabs=connectivity
 [connectivitychecker]:https://learn.microsoft.com/en-us/azure-stack/hci/manage/use-environment-checker?tabs=connectivity#run-readiness-checks
 [hardwarechecker]:https://learn.microsoft.com/en-us/azure-stack/hci/manage/use-environment-checker?tabs=hardware#run-readiness-checks
@@ -38,7 +37,7 @@ Resources are still available for the deployment of 22H2:
   
 ## Deployment Planning and Readiness
 
-When looking to the deployment of Azure Stack HCI then there are a number of design decisions which need to be taken anf these are covered within the [Planning Welcome Kit][planningwelcomekit].  Once all of these decision and design have been complete then the next step is to ensure that the environment is ready for the deployment.  The [Environment Checker][environmentchecker] provides the following checks which should all be complete and pass successfully to help a smooth deployment as possible:
+When looking to the deployment of Azure Stack HCI then there are a number of design decisions which need to be taken anf these are covered within [1 - planning: Infrastructure Setup and Integration](../../1%20-%20planning/readme.md).  Once all of these decision and design have been complete then the next step is to ensure that the environment is ready for the deployment.  The [Environment Checker][environmentchecker] provides the following checks which should all be complete and pass successfully to help a smooth deployment as possible:
 
 
 

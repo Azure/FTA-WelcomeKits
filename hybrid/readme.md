@@ -31,7 +31,6 @@ Welcome to the ultimate guide for Azure Stack HCI enthusiasts! Whether you are e
 
 ## [4 - scenarios: Services and Applications](./hci/4%20-%20scenarios/readme.md)  
 - **Migrations:** Strategic planning and execution of workload migrations to Azure Stack HCI, ensuring minimal disruption and optimal resource utilization ([Migration Strategies](./hci/4%20-%20scenarios/migration/readme.md)).
-Appservices)).
 - **AVD on HCI:** Integration of Azure Virtual Desktop within HCI, offering secure and scalable virtual desktop infrastructure solutions ([AVD on HCI Implementation](./hci/4%20-%20scenarios/avd/readme.md)).
 - **AKS Hybrid:** Implementation of Azure Kubernetes Service in hybrid environments, enabling efficient management of containerized applications across diverse infrastructures ([AKS Hybrid Configuration](./hci/4%20-%20scenarios/aksworkload/README.md)).
 - **SDN:** Deployment of Software-Defined Networking to enhance network agility, security, and performance in Azure Stack HCI ([SDN Implementation Strategies](https://learn.microsoft.com/en-us/azure-stack/hci/concepts/software-defined-networking-23h2)).
