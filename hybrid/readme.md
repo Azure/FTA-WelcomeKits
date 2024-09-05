@@ -21,8 +21,8 @@ Welcome to the ultimate guide for Azure Stack HCI enthusiasts! Whether you are e
 - **Storage:** Deployment of advanced storage solutions, tailored to manage data effectively in Azure Stack HCI, enhancing data availability and integrity ([Storage Configuration](./hci/1%20-%20planning/readme.md#storage)).
 
 ## [2 - deployment: Cluster Deployment Options & Creation ](./hci/2%20-%20deployment/readme.md)  
-- **Cluster Creation and Registration:** Systematic establishment and registration of HCI clusters, focusing on scalability, manageability, and seamless integration ([Cluster Deployment Guidelines](https://aka.ms/FTAWelcomeKit/Hybrid/ClusterDeployment)).
-- **Cluster Deployment (23H2)** Overview of the steps of the deployment from installing of the OS to The actual cluster deployment([Cluster Deployment (23H2)](./hci/2%20-%20deployment/readme.md)).
+- **Cluster Creation and Registration:** Systematic establishment and registration of HCI clusters, focusing on scalability, manageability, and seamless integration ([Cluster Deployment Guidelines](./hci/2%20-%20deployment/readme.md)).
+- **Cluster Deployment (23H2)** Overview of the steps of the deployment from installing of the OS to The actual cluster deployment([Cluster Deployment (23H2)](./hci/2%20-%20deployment/cluster/Deployment-23h2.md)).
 
 ## [3 - governance: Management](./hci/3%20-%20governance/readme.md)
 - **Monitoring:** Implementation of comprehensive monitoring solutions for Azure Stack HCI, enabling real-time oversight and proactive management of system health ([Monitoring Solutions](./hci/3%20-%20governance/ClusterMonitoring.md)).
