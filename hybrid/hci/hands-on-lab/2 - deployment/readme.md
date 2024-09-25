@@ -36,7 +36,7 @@ Azure Stack HCI (since 23H2) can be deployed in 2 ways:
  
 
 ## The environment provided by  
-[...Deploy A Nested Virtualization Environment To Test Azure Stack HCI 23H2](https://github.com/bfrankMS/CreateHypervVms/tree/master/)   
+[...Deploy A Nested Virtualization Environment To Test Azure Stack HCI 23H2](https://github.com/bfrankMS/CreateHypervVms/tree/master/Scenario-AzStackHCI)   
 has some specifics or benefits:  
 **[the DC]**
 - It already has an AD installed and configured.
@@ -118,8 +118,8 @@ Here are the most important Parameters:
 |adouPath                      |e.g. *OU=HCI,DC=myhci**00**,DC=org*|**Your** oU path|
 |Username                      |asLCMUser|The domain deployment account that was created in step 1.|
 |Password                      |%your password%|password for asLCMUser |
-|Local administrator username  |asLocalAdmin | A local administrator account that was predeployed when using [...Deploy A Nested Virtualization Environment To Test Azure Stack HCI 23H2](https://github.com/bfrankMS/CreateHypervVms/tree/master/)    |
-|Local administrator password  |%your password%|password for local Admin user depending on what you have specified in [...Deploy A Nested Virtualization Environment To Test Azure Stack HCI 23H2](https://github.com/bfrankMS/CreateHypervVms/tree/master/)  |
+|Local administrator username  |asLocalAdmin | A local administrator account that was predeployed when using [...Deploy A Nested Virtualization Environment To Test Azure Stack HCI 23H2](https://github.com/bfrankMS/CreateHypervVms/tree/master/Scenario-AzStackHCI)    |
+|Local administrator password  |%your password%|password for local Admin user depending on what you have specified in [...Deploy A Nested Virtualization Environment To Test Azure Stack HCI 23H2](https://github.com/bfrankMS/CreateHypervVms/tree/master/Scenario-AzStackHCI)  |
 |Volumes             |Create workload volumes|The volume type for deploying a hci cluster|
 
 
