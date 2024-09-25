@@ -13,6 +13,7 @@ Brainstorming:
   - Typo in Wizard (e.g. domain name wrong) or ARM template. (c:\deployment\unattend.json)
   - Extension installation errors -> where are the log files (c:\packages\plugins\....\status\...status)
   - Network  failing: 
+    - IPv6 enabled but not configured
     - e.g. Network ATC RDMA not supported on compute, mgmt nics. 
     - storage VLAN not allowed on switch
     - ARB cannot communicate with mgmt network

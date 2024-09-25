@@ -1,0 +1,205 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "apiVersion": {
+            "value": "2024-04-01"
+        },
+        "deploymentMode": {
+            "value": "Validate"
+        },
+        "keyVaultName": {
+            "value": "kv???"
+        },
+        "clusterWitnessStorageAccountName": {
+            "value": "samyhci???"
+        },
+        "clusterName": {
+            "value": "myhci???clus"
+        },
+        "nodeNames": {
+            "value": [
+                "???-hci-1",
+                "???-hci-2"
+            ]
+        },
+        "domainFqdn": {
+            "value": "myhci???.org"
+        },
+        "namingPrefix": {
+            "value": "hci"
+        },
+        "adouPath": {
+            "value": "OU=HCI,DC=myhci???,DC=org"
+        },
+        "driftControlEnforced": {
+            "value": true
+        },
+        "credentialGuardEnforced": {
+            "value": true
+        },
+        "smbSigningEnforced": {
+            "value": true
+        },
+        "smbClusterEncryption": {
+            "value": false
+        },
+        "bitlockerBootVolume": {
+            "value": true
+        },
+        "bitlockerDataVolumes": {
+            "value": true
+        },
+        "wdacEnforced": {
+            "value": true
+        },
+        "streamingDataClient": {
+            "value": true
+        },
+        "euLocation": {
+            "value": false
+        },
+        "episodicDataUpload": {
+            "value": true
+        },
+        "configurationMode": {
+            "value": "Express"
+        },
+        "subnetMask": {
+            "value": "255.255.255.0"
+        },
+        "defaultGateway": {
+            "value": "192.168.0.1"
+        },
+        "startingIPAddress": {
+            "value": "192.168.0.10"
+        },
+        "endingIPAddress": {
+            "value": "192.168.0.30"
+        },
+        "physicalNodesSettings": {
+            "value": [
+                {
+                    "name": "???-hci-1",
+                    "ipv4Address": "192.168.0.2"
+                },
+                {
+                    "name": "???-hci-2",
+                    "ipv4Address": "192.168.0.3"
+                }
+            ]
+        },
+        "dnsServers": {
+            "value": [
+                "192.168.0.1"
+            ]
+        },
+        "useDhcp": {
+            "value": false
+        },
+        "intentList": {
+            "value": [
+                {
+                    "name": "mgmt",
+                    "trafficType": [
+                        "Management"
+                    ],
+                    "adapter": [
+                        "aMGMT"
+                    ],
+                    "overrideVirtualSwitchConfiguration": false,
+                    "virtualSwitchConfigurationOverrides": {
+                        "enableIov": "",
+                        "loadBalancingAlgorithm": ""
+                    },
+                    "overrideQosPolicy": false,
+                    "qosPolicyOverrides": {
+                        "priorityValue8021Action_Cluster": "7",
+                        "priorityValue8021Action_SMB": "3",
+                        "bandwidthPercentage_SMB": "50"
+                    },
+                    "overrideAdapterProperty": true,
+                    "adapterPropertyOverrides": {
+                        "jumboPacket": "1514",
+                        "networkDirect": "Disabled",
+                        "networkDirectTechnology": ""
+                    }
+                },
+                {
+                    "name": "compute",
+                    "trafficType": [
+                        "Compute"
+                    ],
+                    "adapter": [
+                        "Comp1",
+                        "Comp2"
+                    ],
+                    "overrideVirtualSwitchConfiguration": false,
+                    "virtualSwitchConfigurationOverrides": {
+                        "enableIov": "",
+                        "loadBalancingAlgorithm": ""
+                    },
+                    "overrideQosPolicy": false,
+                    "qosPolicyOverrides": {
+                        "priorityValue8021Action_Cluster": "7",
+                        "priorityValue8021Action_SMB": "3",
+                        "bandwidthPercentage_SMB": "50"
+                    },
+                    "overrideAdapterProperty": true,
+                    "adapterPropertyOverrides": {
+                        "jumboPacket": "1514",
+                        "networkDirect": "Disabled",
+                        "networkDirectTechnology": ""
+                    }
+                },
+                {
+                    "name": "smb",
+                    "trafficType": [
+                        "Storage"
+                    ],
+                    "adapter": [
+                        "SMB1",
+                        "SMB2"
+                    ],
+                    "overrideVirtualSwitchConfiguration": false,
+                    "virtualSwitchConfigurationOverrides": {
+                        "enableIov": "",
+                        "loadBalancingAlgorithm": ""
+                    },
+                    "overrideQosPolicy": false,
+                    "qosPolicyOverrides": {
+                        "priorityValue8021Action_Cluster": "7",
+                        "priorityValue8021Action_SMB": "3",
+                        "bandwidthPercentage_SMB": "50"
+                    },
+                    "overrideAdapterProperty": true,
+                    "adapterPropertyOverrides": {
+                        "jumboPacket": "1514",
+                        "networkDirect": "Disabled",
+                        "networkDirectTechnology": ""
+                    }
+                }
+            ]
+        },
+        "storageNetworkList": {
+            "value": [
+                {
+                    "name": "StorageNetwork1",
+                    "networkAdapterName": "SMB1",
+                    "vlanId": "711"
+                },
+                {
+                    "name": "StorageNetwork2",
+                    "networkAdapterName": "SMB2",
+                    "vlanId": "712"
+                }
+            ]
+        },
+        "storageConnectivitySwitchless": {
+            "value": true
+        },
+        "customLocation": {
+            "value": "cl-myhci???clus"
+        }
+    }
+}
