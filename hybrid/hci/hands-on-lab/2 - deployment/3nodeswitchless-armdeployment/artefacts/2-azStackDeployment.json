@@ -353,6 +353,13 @@
                 "description": "The storage connectivity switchless value for deploying a hci cluster"
             }
         },
+        "enableStorageAutoIp": {
+            "defaultValue": false,
+            "type": "bool",
+            "metadata": {
+                "description": "Needs to be false if you want to use custom storage ip values."
+            }
+        },
         "customLocation": {
             "defaultValue": "",
             "type": "string",
@@ -483,7 +490,8 @@
                                 "hostNetwork": {
                                     "intents": "[parameters('intentList')]",
                                     "storageNetworks": "[parameters('storageNetworkList')]",
-                                    "storageConnectivitySwitchless": "[parameters('storageConnectivitySwitchless')]"
+                                    "storageConnectivitySwitchless": "[parameters('storageConnectivitySwitchless')]",
+                                    "enableStorageAutoIp": "[parameters('enableStorageAutoIp')]"
                                 },
                                 "adouPath": "[parameters('adouPath')]",
                                 "secretsLocation": "[variables('secretsLocation')]",

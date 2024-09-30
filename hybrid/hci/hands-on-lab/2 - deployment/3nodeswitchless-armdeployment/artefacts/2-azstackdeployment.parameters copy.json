@@ -283,6 +283,9 @@
         "storageConnectivitySwitchless": {
             "value": true
         },
+        "enableStorageAutoIp": {
+            "value": "false"
+        },
         "customLocation": {
             "value": "cl-myhci???clus"
         }
