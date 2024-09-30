@@ -284,7 +284,7 @@
             "value": true
         },
         "enableStorageAutoIp": {
-            "value": "false"
+            "value": false
         },
         "customLocation": {
             "value": "cl-myhci???clus"
