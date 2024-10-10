@@ -2,6 +2,16 @@
 
 When deploying and managing an HCI cluster, customers will frequently need to delve into PowerShell. For those who are unfamiliar with it, this can present a learning curve. Below are some tips and tricks to help get you started.
 
+## Basics
+
+### Tab Completion
+
+When running PowerShell commands, you can type a partial command, parameter name, and sometimes parameter value, then hit TAB for auto-complete. This is a great way to ensure you haven't mistyped anything and that you are using a valid command. For example, if you type `get-childi` and hit TAB, you'll get `Get-ChildItem`--the completed command and casing change showing you have a valid command.
+
+### Finding commands
+
+To find a command or see available commands--especially when you do not remember the whole command name--is easy to do. Run `Get-Command *string*`, where _string_ is the part of the command you know. For example, `Get-Command *AzureStackHCI*` will get me all commands with AzureStackHCI in them. 
+
 ## PowerShell Remoting
 
 PowerShell remoting is a great way to manage your HCI nodes from a central location and perform one-to-many tasks. Configuring your nodes using remote PowerShell commands run in parallel against all nodes have the added benefits of ensuring nodes are consistent while improving your efficiency.
@@ -113,6 +123,10 @@ On Windows Core in a Remote Desktop session, log files can be opened in Notepad 
 ### Get the last 150 lines of a file and keep the file open, printing new changes to the screen
 
 `Get-Content .\my.log -Last 150 -Wait`
+
+### Bonus: Reverse tab Completion
+
+We mentioned tab completion at the start, but _reverse_ tab completion is especially helpful for viewing the most recent log file. For example, typing `cat c:/clouddeployment/logs/clouddeployment` then `Shift + Tab` will auto-complete the most recent CloudDeployment-YYYY-MM-dd.log log file--rather than the oldest that you'd get with just `Tab`.
 
 ## Finding the source code
 
