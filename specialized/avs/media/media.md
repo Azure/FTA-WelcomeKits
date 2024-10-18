@@ -1,3 +1,1 @@
-# Media
-
-Folder to hold any media used in the AVS Welcome Kit
+The page you are looking for has been moved to [https://mbrat2005.github.io/FTA-WelcomeKits/specialized/avs/media/media](https://mbrat2005.github.io/FTA-WelcomeKits/specialized/avs/media/media). Please update your references.

@@ -1,0 +1,1 @@
+The page you are looking for has been moved to [https://mbrat2005.github.io/FTA-WelcomeKits/foundationalTech/management/readme](https://mbrat2005.github.io/FTA-WelcomeKits/foundationalTech/management/readme). Please update your references.
