@@ -1,5 +1,5 @@
 
-## ... pls do [steps 1 - 4a] then come back here(../readme.md)
+## ... pls do [steps 1 - 4a](../readme.md) then come back here.
 ## 5. Deploy AzStack HCI using ARM templates
 please 1st read [Deploy an Azure Stack HCI, version 23H2 via Azure Resource Manager deployment template](https://learn.microsoft.com/en-us/azure-stack/hci/deploy/deployment-azure-resource-manager-template)
 as official reference.  
