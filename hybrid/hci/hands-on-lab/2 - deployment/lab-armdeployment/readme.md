@@ -9,7 +9,7 @@ To sum it up you need to:
 2. Step: Deploy using Azure Resource Manager template
  
 ### 1. Step: Prepare Azure resources  
-[**READ Only**] As per [official Step 1: Prepare Azure resources](https://learn.microsoft.com/en-us/azure-stack/hci/deploy/deployment-azure-resource-manager-template#step-1-prepare-azure-resources)
+[**Pls READ first only - for understanding**] As per [official Step 1: Prepare Azure resources](https://learn.microsoft.com/en-us/azure-stack/hci/deploy/deployment-azure-resource-manager-template#step-1-prepare-azure-resources)
 you would need to **Create a service principal for ARB**  
 >!!!However the documenation should mention to : **assign proper role permissions to this service principal at subscription level**. Otherwhise deployment may fail. e.g.:  
 ![ARB Deployment Role Permission on Subscription for ARB Service Principal](./images/ARBdeploymentRoleOnSubscription.png)
