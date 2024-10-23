@@ -9,22 +9,24 @@ To sum it up you need to:
 2. Step: Deploy using Azure Resource Manager template
  
 ### 1. Step: Prepare Azure resources  
-as per [official Step 1: Prepare Azure resources](https://learn.microsoft.com/en-us/azure-stack/hci/deploy/deployment-azure-resource-manager-template#step-1-prepare-azure-resources)
+[**READ Only**] As per [official Step 1: Prepare Azure resources](https://learn.microsoft.com/en-us/azure-stack/hci/deploy/deployment-azure-resource-manager-template#step-1-prepare-azure-resources)
 you would need to **Create a service principal for ARB**  
 >!!!However the documenation should mention to : **assign proper role permissions to this service principal at subscription level**. Otherwhise deployment may fail. e.g.:  
 ![ARB Deployment Role Permission on Subscription for ARB Service Principal](./images/ARBdeploymentRoleOnSubscription.png)
 
-Next you need to [Get the **object ID for Azure Stack HCI Resource Provider**](https://learn.microsoft.com/en-us/azure-stack/hci/deploy/deployment-azure-resource-manager-template#get-the-object-id-for-azure-stack-hci-resource-provider)
-This is required as parameter for the ARM deployment and IDs may be different in every subscription.  
-You can run e.g. following code in your Cloud Shell (PowerShell) to retrieve the value:  
+Next you need to know how to [Get the **object ID for Azure Stack HCI Resource Provider**](https://learn.microsoft.com/en-us/azure-stack/hci/deploy/deployment-azure-resource-manager-template#get-the-object-id-for-azure-stack-hci-resource-provider)
+As this is required as parameter for the ARM deployment and IDs may be different in every subscription.  
+You could run e.g. following code in your Cloud Shell (PowerShell) to retrieve the value:  
 ```PowerShell
 az ad sp list --display-name 'Microsoft.AzureStackHCI Resource Provider' --query "[].{spID:id}" --output tsv
 ```  
-The output should be something like:  
+The output should display a GUID like:  
 ![AzureStack HCI Resource Provider ID](./images/AzureStackHCIResourceProviderID.png)  
 
-**Lucky you: In order to speed up things I have created a script that will do this automatically.**  
-Pls go and execute [0-createArbDeploymentSP.ps1](../lab-armdeployment/artefacts/0-createArbDeploymentSP.ps1) in your Azure Cloud Shell (PowerShell).
+[ **Action** ]  : In order to speed up things **I have created a script that will do the above automatically**. 
+Pls **go and execute** [0-createArbDeploymentSP.ps1](../lab-armdeployment/artefacts/0-createArbDeploymentSP.ps1) in your Azure Cloud Shell (PowerShell).
+>**Note**: Make **sure you copy & save the output** it generates as the SPrincipal password will be only displayed once.
+![Copy the Service Principal credential output from script](../lab-armdeployment/images/copyspprincipal.png)
 
 ### Step 2: Deploy using Azure Resource Manager template  
 Despite from the ARM templates you may find for installing HCI - I modified them and split them into 2 files:
